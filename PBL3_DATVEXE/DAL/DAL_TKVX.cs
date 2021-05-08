@@ -102,6 +102,7 @@ namespace PBL3_DATVEXE.DAL
             }
             return list;
         }
+        // lấy tất cả orderSeat
         public List<orderSeat> getAllOrderSeat_DAL()
         {
             List<orderSeat> list = new List<orderSeat>();
@@ -122,10 +123,12 @@ namespace PBL3_DATVEXE.DAL
             return list;
         }
 
-        // hiện detail tuyến
+        // hiện detail tuyến trên form detailSchedule
         public List<Detail> getDetailSchedule_DAL(string departure1, string arrival1, DateTime date1)
         {
-            List<Route> listRoute = new List<Route>();// lấy tuyến mà khách hàng chọn.
+            
+            // lấy tuyến mà khách hàng chọn.
+            List<Route> listRoute = new List<Route>();
             foreach(Route i in getALLTuyen_DAL())
             {
                 if(i.departure == departure1 && i.arrival == arrival1 && i.deleted != true)
@@ -133,6 +136,7 @@ namespace PBL3_DATVEXE.DAL
                         listRoute.Add(i);                        
                 }    
             }
+
             // lấy cá chi tiết tuyến của listRoute sau khi có tuyến mà người dùng chọn
             List<DetailRoute> listDetailRoute = new List<DetailRoute>();
             foreach(DetailRoute i in getALLChiTietTuyen_DAL())
@@ -145,8 +149,6 @@ namespace PBL3_DATVEXE.DAL
                     }    
                 }    
             }
-            // 
-              
 
             // lấy các xe sẽ chạy chi tiết tuyến đó 
             List<Vehicle> listVehicle = new List<Vehicle>();
@@ -187,7 +189,6 @@ namespace PBL3_DATVEXE.DAL
                             id_detRoute = listDetailRoute[i].id_delRoute,
                             id_vehicle = listDetailRoute[i].id_vehicle,
                             price = listDetailRoute[i].price,
-                            //time_start = listDetailRoute[i].time_start,
                             time_start = listDetailRoute[i].time_start,
                             departure = departure1,
                             arrival = arrival1,
@@ -304,7 +305,6 @@ namespace PBL3_DATVEXE.DAL
                 + "')";
 
             DBHelper.Instance.executeQuery(query);
-            //Convert.ToString(Convert.ToInt32(getALlOrder_DAL()[getALlOrder_DAL().Count - 1].id_order) + 1),Convert.ToString(Convert.ToInt32(getALlKhachHang_DAL()[getALlKhachHang_DAL().Count - 1].id_person) + 1)
         }
 
         public void updateDetailRoute_DAL(string id_detRoute)
@@ -312,7 +312,6 @@ namespace PBL3_DATVEXE.DAL
             string query = "Update DetailRoute set deleted = 1 where id_detRoute = " + id_detRoute;
 
             DBHelper.Instance.executeQuery(query);
-            //Convert.ToString(Convert.ToInt32(getALlOrder_DAL()[getALlOrder_DAL().Count - 1].id_order) + 1),Convert.ToString(Convert.ToInt32(getALlKhachHang_DAL()[getALlKhachHang_DAL().Count - 1].id_person) + 1)
         }
 
 

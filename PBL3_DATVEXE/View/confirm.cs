@@ -39,22 +39,61 @@ namespace PBL3_DATVEXE.View
         }
         private void But_seat_Click(object sender, EventArgs e)
         {
+            List<orderSeat> listOrderSeats = BLL_TKVX.Instance.getAllOrderSeat_BLL();
+            List<Seat> listSeats = new List<Seat>();
+            foreach(Seat i in BLL_TKVX.Instance.getAllGhe_BLL())
+            {
+                if(i.id_vehicle == d3())
+                {
+                    listSeats.Add(i);
+                }    
+            }    
+
             Button t = (Button)sender;
+            int count1 = 0;
             if(t.ForeColor == Color.Red)
             {
-                t.ForeColor = Color.Black;
-                count--;
-                
-                lbPrice.Text = Convert.ToString(count * d());
-                try
+                foreach(Seat i in listSeats)
                 {
-                listNameGhe.Remove(t.Text);
+                    foreach(orderSeat j in listOrderSeats)
+                    {
+                        if (i.name_seat == t.Text.ToString() && i.id_seat == j.id_seat && d2() == j.id_detRoute && j.status == true)
+                        {
+                            count1++;
+                            break;
+                        }    
+                        else
+                        {
+                        
+                        }                            
+                    }    
+                    if(count1 > 0)
+                    {
+                        break;
+                    }    
                 }
-                catch(Exception r)
+                if(count1 > 0)
                 {
-                    MessageBox.Show(r.ToString());
+                    MessageBox.Show("Ghe da duoc dat");
+
                 }
-            }   
+                else
+                {
+                  t.ForeColor = Color.Black;
+                  count--;
+
+                  lbPrice.Text = Convert.ToString(count * d());
+                  try
+                  {
+                      listNameGhe.Remove(t.Text);
+                  } 
+                  catch (Exception r)
+                  {
+                       MessageBox.Show(r.ToString());
+                  }
+                }                    
+
+            }
             else
             {
             t.ForeColor = Color.Red;
@@ -73,7 +112,7 @@ namespace PBL3_DATVEXE.View
         //    tongGia = 654;
         //}
         // hàm lấy id_route and id_vehicle 
-        public string getIdRoute()
+        public string getIdDetRoute()
         {
             return d2();
         }
@@ -86,11 +125,19 @@ namespace PBL3_DATVEXE.View
             datVe dv = new datVe(count,count*d());
             //dv.d1 += new datVe.getVeAndTongGia(getGiaAndVe);
             dv.getGhe += new datVe.getNameGhe(getNameGhe);
-            dv.getRoute += new datVe.getIdRouteAndVehicle(getIdRoute);
+            dv.getRoute += new datVe.getIdRouteAndVehicle(getIdDetRoute);
             dv.getVehicle += new datVe.getIdRouteAndVehicle(getIdVehicle);
+            if(count <= 0)
+            {
+                MessageBox.Show("Ban chua chon ghe");
+            }   
+            else
+            {
             dv.Show();
-           
             this.Close();
+            }                
+
+           
         }
 
         private void confirm_FormClosed(object sender, FormClosedEventArgs e)

@@ -27,11 +27,13 @@ namespace PBL3_DATVEXE.BLL
 
             }
         }
+        // lấy tất cả xe
         public List<Vehicle> getAllXe_BLL()
         {
             return DAL_TKVX.Instance.getALLXe_DAL();
         }
 
+        // lấy tất cả tuyến mà người dùng đã chọn
         public List<Detail> getALLDetailSchedule_BLL(string departure1, string arrival1, DateTime date1)
         {
             return DAL_TKVX.Instance.getDetailSchedule_DAL(departure1,arrival1,date1);
@@ -42,6 +44,7 @@ namespace PBL3_DATVEXE.BLL
             return DAL_TKVX.Instance.Sort_DAL(d, departure1, arrival1, date1);
         }
 
+        // thêm thông tin người dùng
         public void addPerson_BLL(string id_person, string name, string phone, string address, string email)
         {
             DAL_TKVX.Instance.addPerson_DAL(id_person,name,phone,address,email);
@@ -71,25 +74,28 @@ namespace PBL3_DATVEXE.BLL
             return DAL_TKVX.Instance.getALlKhachHang_DAL();
         }
 
-        // lấy id_order max trong dal
+        // lấy id_order max trong dal để khi push vào bảng Order không bị trùng khóa
         public string getMaxIdOrder_BLL()
         {
             return DAL_TKVX.Instance.getMaxIdOrder();
         }
-        // lấy id_person max trong dal
+        // lấy id_person max trong dal để khi push vào bảng Person không bị trùng khóa
         public string getMaxIdPerson_BLL()
         {
             return DAL_TKVX.Instance.getMaxIdPerson();
         }
+        // lấy tất cả chi tiết tuyến
         public List<DetailRoute> getAllChiTietTuyen_BLL()
         {
             return DAL_TKVX.Instance.getALLChiTietTuyen_DAL();
         }
+        // cập nhật chi tiết tuyến nếu thời gian hiện tại đã quá thời gian trong chi tiết tuyến
         public void updateDetailRoute_BLL(string id_detRoute)
         {
             DAL_TKVX.Instance.updateDetailRoute_DAL(id_detRoute);
         }
 
+        // lấy tất cả orderSeat
         public List<orderSeat> getAllOrderSeat_BLL()
         {
             return DAL_TKVX.Instance.getAllOrderSeat_DAL();

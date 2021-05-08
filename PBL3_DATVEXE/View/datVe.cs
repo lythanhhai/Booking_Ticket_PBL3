@@ -45,19 +45,22 @@ namespace PBL3_DATVEXE.View
 
         private void But_xacnhan_Click(object sender, EventArgs e)
         {
+
             // thêm thông tin người dùng
             string id_person = Convert.ToString(Convert.ToInt32(BLL_TKVX.Instance.getMaxIdPerson_BLL()) + 1);
-            BLL_TKVX.Instance.addPerson_BLL(id_person,txtName.Text,txtPhone.Text,txtNote.Text,txtEmail.Text);
+            BLL_TKVX.Instance.addPerson_BLL(id_person, txtName.Text, txtPhone.Text, txtNote.Text, txtEmail.Text);
+
             // id_order
             string id_order = Convert.ToString(Convert.ToInt32(BLL_TKVX.Instance.getMaxIdOrder_BLL()) + 1);
+
             // lấy số vé and tổng giá cho thuộc tính 
             this.id_detRoute = getRoute();// id tuyến
             this.id_vehicle = getVehicle();// id xe
 
             //lấy danh sách tên ghế đã chọn 
             List<string> listGheDaChon = getGhe(); // list danh sách tên ghế
-            // lấy id_seat của các ghế đã chọn
 
+            // lấy id_seat của các ghế đã chọn
             List<string> listId_seat = new List<string>();
             foreach (string i in listGheDaChon)
             {
@@ -84,10 +87,6 @@ namespace PBL3_DATVEXE.View
 
             }
 
-            //MessageBox.Show(listOrderSeat.Count.ToString());
-
-
-
 
             // có so vé , có tổng giá ,có id_route 
             // cần tìm id_seat dựa vào id_vehicle được lấy từ form detailschedule
@@ -99,7 +98,7 @@ namespace PBL3_DATVEXE.View
             }
             else
             {
-                MessageBox.Show("quá nhiều");
+                MessageBox.Show("Ban chua chon ghe");
             }
         }
     }
