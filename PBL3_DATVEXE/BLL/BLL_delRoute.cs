@@ -35,10 +35,22 @@ namespace PBL3_DATVEXE.BLL
             {
                 if (i.id_route == id_Route)
                 {
-                    route = (i.departure.ToString() + i.arrival.ToString());
+                    route = (i.departure.ToString() +"-"+ i.arrival.ToString());
                 }
             }
             return route;
+        }
+        public string doivehicle(string id_vehicle)
+        {
+            string vehicle = "";
+            foreach (DTO_vehicle i in DALL_vehicle.Instance.getallvehicle())
+            {
+                if (i.id_vehicle == id_vehicle)
+                {
+                    vehicle = i.name.ToString();
+                }
+            }
+            return vehicle;
         }
         public List<DTO_DelRoute> getListdelroute_BLL(string  id_route)
         {
@@ -52,7 +64,7 @@ namespace PBL3_DATVEXE.BLL
                     {
                         id_delroute = i.id_delroute,
                         route = doiRoute(i.id_route),
-                        vehicle = i.id_vehicle,
+                        vehicle = doivehicle(i.id_vehicle),
                         date = i.date,
                         price=i.price,
                         time_start = i.time_start.ToLongTimeString(),
@@ -67,7 +79,7 @@ namespace PBL3_DATVEXE.BLL
                     {
                         id_delroute = i.id_delroute,
                         route = doiRoute(i.id_route),
-                        vehicle = i.id_vehicle,
+                        vehicle = doivehicle(i.id_vehicle),
                         date = i.date,
                         price = i.price,
                         time_start = i.time_start.ToLongTimeString(),

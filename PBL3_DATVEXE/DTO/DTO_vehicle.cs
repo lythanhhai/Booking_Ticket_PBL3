@@ -8,5 +8,11 @@ namespace PBL3_DATVEXE.DTO
 {
     class DTO_vehicle
     {
+        public string id_vehicle { get; set; }
+        public string type { get; set; }
+        public string name { get; set; }
+        public int number_seat { get; set; }
+        public bool status_vehicle { get; set; }
+
     }
 }

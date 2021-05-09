@@ -38,7 +38,19 @@ namespace PBL3_DATVEXE
                 });
                
             }
-         if(BLL_delRoute.Instance.GetsvByid_detroute(id_detroute)!=null)
+            List<DTO_vehicle> list1 = BLL_vehicle.Instance.getallvehicle();
+            foreach (var i in list1)
+            {
+                comboBox2.Items.Add(new CBBitem
+                {
+                    Value = i.id_vehicle,
+                    Text = i.name
+
+
+                });
+
+            }
+            if (BLL_delRoute.Instance.GetsvByid_detroute(id_detroute)!=null)
             {
                 DTO_delRoute_xl dd = new DTO_delRoute_xl();
                 dd = BLL_delRoute.Instance.GetsvByid_detroute(id_detroute);
@@ -56,7 +68,7 @@ namespace PBL3_DATVEXE
             DTO_delRoute_xl s = new DTO_delRoute_xl();
             s.id_delroute = textBox1.Text;
             s.id_route = ((CBBitem)comboBox1.SelectedItem).Value;
-            s.id_vehicle = comboBox2.Text;
+            s.id_vehicle = ((CBBitem)comboBox2.SelectedItem).Value;
             s.time_start = Convert.ToDateTime(textBox2.Text);
             s.price = Convert.ToDouble(textBox3.Text);
             s.date = dateTimePicker1.Value;
