@@ -57,9 +57,13 @@ namespace PBL3_DATVEXE.BLL
         }
 
         // thêm order
-        public void addOrder_BLL(string id_order, int id_orderSeat, string id_detRoute, string id_person, int numberTicket, double total_price, DateTime date_order)
+        //public void addOrder_BLL(string id_order, string id_detRoute, string id_person, int numberTicket, double total_price, DateTime date_order)
+        //{
+        //    DAL_TKVX.Instance.addOrder_DAL(id_order, id_detRoute, id_person, numberTicket, total_price, date_order);
+        //}
+        public void addOrder_BLL(string id_order, string id_person, int numberTicket, double total_price, DateTime date_order)
         {
-            DAL_TKVX.Instance.addOrder_DAL(id_order, id_orderSeat, id_detRoute, id_person, numberTicket, total_price, date_order);
+            DAL_TKVX.Instance.addOrder_DAL(id_order, id_person, numberTicket, total_price, date_order);
         }
 
         // lấy danh sách tên ghế từ DAL
@@ -99,6 +103,12 @@ namespace PBL3_DATVEXE.BLL
         public List<orderSeat> getAllOrderSeat_BLL()
         {
             return DAL_TKVX.Instance.getAllOrderSeat_DAL();
+        }
+
+        // update orderSeat from order
+        public void updateOrderSeat_BLL(int id_orderSeat,string id_order)
+        {
+            DAL_TKVX.Instance.updateOrderSeat_DAL(id_orderSeat, id_order);
         }
     }
 }

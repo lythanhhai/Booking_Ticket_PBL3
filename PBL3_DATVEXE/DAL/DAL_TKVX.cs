@@ -113,10 +113,10 @@ namespace PBL3_DATVEXE.DAL
                 {
                     id_orderSeat = Convert.ToInt32(i["id_orderSeat"].ToString()),
                     id_detRoute = i["id_detRoute"].ToString(),
-                    id_vehicle = i["id_vehicle"].ToString(),
+                    //id_vehicle = i["id_vehicle"].ToString(), 3
                     id_seat = i["id_seat"].ToString(),
                     status = Convert.ToBoolean(i["status"].ToString()),
-
+                    id_order = i["id_order"].ToString(),
 
                 });
             }
@@ -178,7 +178,7 @@ namespace PBL3_DATVEXE.DAL
                         int gheTrong = j.number_seat;
                         foreach (orderSeat m in getAllOrderSeat_DAL())
                         {
-                            if (j.id_vehicle == m.id_vehicle && listDetailRoute[i].id_delRoute == m.id_detRoute && m.status == true)
+                            if (listDetailRoute[i].id_delRoute == m.id_detRoute && m.status == true)//j.id_vehicle == m.id_vehicle && 
                             {
                                 gheTrong--;
                             }
@@ -258,8 +258,10 @@ namespace PBL3_DATVEXE.DAL
                 list.Add(new Order
                 {
                     id_order = i["id_order"].ToString(),
-                    id_orderSeat = i["id_orderSeat"].ToString(),
-                    id_detRoute = i["id_detRoute"].ToString(),
+                    //id_orderSeat = i["id_orderSeat"].ToString(),
+
+                  //  id_detRoute = i["id_detRoute"].ToString(), 1
+
                     id_person = i["id_person"].ToString(),
                     numberTicket = Convert.ToInt32(i["numberTicket"].ToString()),
                     total_price = Convert.ToDouble(i["total_price"].ToString()),
@@ -285,15 +287,31 @@ namespace PBL3_DATVEXE.DAL
             DBHelper.Instance.executeQuery(query);
         }
         // thêm order
-        public void addOrder_DAL(string id_order, int id_orderSeat, string id_detRoute, string id_person, int numberTicket, double total_price, DateTime date_order)
+        //public void addOrder_DAL(string id_order, string id_detRoute, string id_person, int numberTicket, double total_price, DateTime date_order)//2
+        //{
+        //    string query = "INSERT INTO [Order](id_order,id_detRoute,id_person,numberTicket,total_price,date_order) values "
+        //        + "('"
+        //        + id_order
+        //        + "','"
+        //        + id_detRoute
+        //        + "','"
+        //        + id_person
+        //        + "','"
+        //        + Convert.ToString(numberTicket)
+        //        + "','"
+        //        + Convert.ToString(total_price)
+        //        + "','"
+        //        + Convert.ToString(date_order)
+        //        + "')";
+
+        //    DBHelper.Instance.executeQuery(query);
+        //}
+
+        public void addOrder_DAL(string id_order, string id_person, int numberTicket, double total_price, DateTime date_order)//2
         {
-            string query = "INSERT INTO [Order](id_order,id_orderSeat,id_detRoute,id_person,numberTicket,total_price,date_order) values "
+            string query = "INSERT INTO [Order](id_order,id_person,numberTicket,total_price,date_order) values "
                 + "('"
                 + id_order
-                + "','"
-                + Convert.ToString(id_orderSeat)
-                + "','"
-                + id_detRoute
                 + "','"
                 + id_person
                 + "','"
@@ -373,6 +391,13 @@ namespace PBL3_DATVEXE.DAL
             }
             idPerson = Max;
             return idPerson;
+        }
+
+        // update orderSeat sau khi order
+        public void updateOrderSeat_DAL(int id_orderSeat,string id_order)
+        {
+            string query = "Update orderSeat set status = 1,id_order = " + "'" + id_order + "'" + " where id_orderSeat = " + id_orderSeat.ToString();
+            DBHelper.Instance.executeQuery(query);
         }
     }
 }

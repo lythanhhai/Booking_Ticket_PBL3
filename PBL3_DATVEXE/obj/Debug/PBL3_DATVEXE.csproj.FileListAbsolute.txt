@@ -53,3 +53,4 @@ C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.csproj.CoreCompi
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.exe
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.pdb
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.vehicle.resources
+D:\C#\detailPBL3\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.vehicle.resources
