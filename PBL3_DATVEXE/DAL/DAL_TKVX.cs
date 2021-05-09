@@ -116,7 +116,7 @@ namespace PBL3_DATVEXE.DAL
                     id_vehicle = i["id_vehicle"].ToString(),
                     id_seat = i["id_seat"].ToString(),
                     status = Convert.ToBoolean(i["status"].ToString()),
-
+                    id_order = i["id_order"].ToString(),
 
                 });
             }
@@ -258,7 +258,7 @@ namespace PBL3_DATVEXE.DAL
                 list.Add(new Order
                 {
                     id_order = i["id_order"].ToString(),
-                    id_orderSeat = i["id_orderSeat"].ToString(),
+                    //id_orderSeat = i["id_orderSeat"].ToString(),
                     id_detRoute = i["id_detRoute"].ToString(),
                     id_person = i["id_person"].ToString(),
                     numberTicket = Convert.ToInt32(i["numberTicket"].ToString()),
@@ -285,13 +285,11 @@ namespace PBL3_DATVEXE.DAL
             DBHelper.Instance.executeQuery(query);
         }
         // thêm order
-        public void addOrder_DAL(string id_order, int id_orderSeat, string id_detRoute, string id_person, int numberTicket, double total_price, DateTime date_order)
+        public void addOrder_DAL(string id_order, string id_detRoute, string id_person, int numberTicket, double total_price, DateTime date_order)
         {
-            string query = "INSERT INTO [Order](id_order,id_orderSeat,id_detRoute,id_person,numberTicket,total_price,date_order) values "
+            string query = "INSERT INTO [Order](id_order,id_detRoute,id_person,numberTicket,total_price,date_order) values "
                 + "('"
                 + id_order
-                + "','"
-                + Convert.ToString(id_orderSeat)
                 + "','"
                 + id_detRoute
                 + "','"
@@ -373,6 +371,13 @@ namespace PBL3_DATVEXE.DAL
             }
             idPerson = Max;
             return idPerson;
+        }
+
+        // update orderSeat sau khi order
+        public void updateOrderSeat_DAL(int id_orderSeat,string id_order)
+        {
+            string query = "Update orderSeat set status = 1,id_order = " + "'" + id_order + "'" + " where id_orderSeat = " + id_orderSeat.ToString();
+            DBHelper.Instance.executeQuery(query);
         }
     }
 }

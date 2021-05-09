@@ -87,13 +87,18 @@ namespace PBL3_DATVEXE.View
 
             }
 
-
             // có so vé , có tổng giá ,có id_route 
             // cần tìm id_seat dựa vào id_vehicle được lấy từ form detailschedule
             // thêm đơn order theo ghế đã chọn
-            if (listOrderSeat.Count == 1)
+            if (listOrderSeat.Count > 0)
             {
-                BLL_TKVX.Instance.addOrder_BLL(id_order, listOrderSeat[0], this.id_detRoute, id_person, this.soVe, this.tongGia, DateTime.Now);
+                BLL_TKVX.Instance.addOrder_BLL(id_order, this.id_detRoute, id_person, this.soVe, this.tongGia, DateTime.Now);
+                for (int i = 0; i < listOrderSeat.Count; i++)
+                {
+                    BLL_TKVX.Instance.updateOrderSeat_BLL(listOrderSeat[i], id_order);
+                }
+                // BLL_TKVX.Instance.getAllOrderSeat_BLL()
+
                 MessageBox.Show("ok");
             }
             else

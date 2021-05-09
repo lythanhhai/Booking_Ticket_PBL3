@@ -15,5 +15,7 @@ namespace PBL3_DATVEXE.DTO
         public string id_seat { get; set; }
 
         public bool status { get; set; }
+
+        public string id_order { get; set; }
     }
 }
