@@ -79,7 +79,7 @@ namespace PBL3_DATVEXE.View
             {
                 foreach (string j in listId_seat)
                 {
-                    if (i.id_detRoute == this.id_detRoute && i.id_vehicle == this.id_vehicle && j == i.id_seat)
+                    if (i.id_detRoute == this.id_detRoute &&  j == i.id_seat)//i.id_vehicle == this.id_vehicle &&
                     {
                         listOrderSeat.Add(i.id_orderSeat);
                     }
@@ -92,13 +92,12 @@ namespace PBL3_DATVEXE.View
             // thêm đơn order theo ghế đã chọn
             if (listOrderSeat.Count > 0)
             {
-                BLL_TKVX.Instance.addOrder_BLL(id_order, this.id_detRoute, id_person, this.soVe, this.tongGia, DateTime.Now);
+                //BLL_TKVX.Instance.addOrder_BLL(id_order, this.id_detRoute, id_person, this.soVe, this.tongGia, DateTime.Now);
+              BLL_TKVX.Instance.addOrder_BLL(id_order, id_person, this.soVe, this.tongGia, DateTime.Now);
                 for (int i = 0; i < listOrderSeat.Count; i++)
                 {
                     BLL_TKVX.Instance.updateOrderSeat_BLL(listOrderSeat[i], id_order);
                 }
-                // BLL_TKVX.Instance.getAllOrderSeat_BLL()
-
                 MessageBox.Show("ok");
             }
             else

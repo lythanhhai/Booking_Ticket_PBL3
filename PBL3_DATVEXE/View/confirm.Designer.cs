@@ -159,12 +159,15 @@ namespace PBL3_DATVEXE.View
             // 
             // But_seat1
             // 
+            this.But_seat1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.But_seat1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.But_seat1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.But_seat1.Location = new System.Drawing.Point(53, 90);
             this.But_seat1.Name = "But_seat1";
             this.But_seat1.Size = new System.Drawing.Size(75, 33);
             this.But_seat1.TabIndex = 0;
             this.But_seat1.Text = "Seat1";
-            this.But_seat1.UseVisualStyleBackColor = true;
+            this.But_seat1.UseVisualStyleBackColor = false;
             this.But_seat1.Click += new System.EventHandler(this.But_seat_Click);
             // 
             // But_tiep
