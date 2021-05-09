@@ -108,13 +108,13 @@ namespace PBL3_DATVEXE.DAL
                             a = a + "---" + r["name_seat"].ToString();
 
                         }
-                        
+
                     }
                 }
 
             }
             return a;
-           
+
         }
         public string doivehicle(string id_order)
         {
