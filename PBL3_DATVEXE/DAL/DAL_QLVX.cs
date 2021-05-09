@@ -44,7 +44,7 @@ namespace PBL3_DATVEXE.DAL
                     {
                         if (id_det == r["id_detRoute"].ToString())
                         {
-                            a = (Convert.ToDateTime(r["date"].ToString())).ToShortDateString() + "---" + (Convert.ToDateTime(r["time_start"].ToString())).ToLongTimeString();
+                            a = (Convert.ToDateTime(r["date"].ToString())).ToShortDateString() + "--" + (Convert.ToDateTime(r["time_start"].ToString())).ToLongTimeString();
                         }
                     }
                 }
@@ -165,7 +165,7 @@ namespace PBL3_DATVEXE.DAL
                             id_route = r["id_route"].ToString();
                             foreach (DataRow d in DB_H.Instance.get(q).Rows)
                             {
-                                a = d["departure"].ToString() + "--" + d["arrival"].ToString();
+                                a = d["departure"].ToString() + "-" + d["arrival"].ToString();
                             }
                         }
                     }

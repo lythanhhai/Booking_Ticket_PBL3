@@ -52,6 +52,28 @@ namespace PBL3_DATVEXE.BLL
             }
             return vehicle;
         }
+        public List<DTO_DelRoute> getallDetRoute()
+        {
+            List<DTO_DelRoute> data = new List<DTO_DelRoute>();
+            foreach (DTO_delRoute_xl i in DAL_DelRoute.Instance.getalldelroute_xl())
+            {
+
+                data.Add(new DTO_DelRoute
+                {
+                    id_delroute = i.id_delroute,
+                    route = doiRoute(i.id_route),
+                    vehicle = doivehicle(i.id_vehicle),
+                    date = i.date,
+                    price = i.price,
+                    time_start = i.time_start.ToLongTimeString(),
+                    deleted = i.deleted
+
+                });
+
+
+            }
+            return data;
+            }
         public List<DTO_DelRoute> getListdelroute_BLL(string  id_route)
         {
 
