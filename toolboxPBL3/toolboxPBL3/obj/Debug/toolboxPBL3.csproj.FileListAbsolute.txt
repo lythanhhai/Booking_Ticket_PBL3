@@ -1,0 +1,16 @@
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\bin\Debug\toolboxPBL3.dll
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\bin\Debug\toolboxPBL3.pdb
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.Properties.Resources.resources
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.csproj.GenerateResource.cache
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.csproj.CoreCompileInputs.cache
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.dll
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.pdb
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\bin\Debug\Dome3.dll
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\bin\Debug\Dome3.pdb
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.csprojAssemblyReference.cache
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.csproj.CopyComplete
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.Account.resources
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.SearchTicket.resources
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.Liststicket.resources
+C:\Users\truong45bi\source\repos\toolboxPBL3\toolboxPBL3\obj\Debug\toolboxPBL3.Sticket.resources
