@@ -172,6 +172,25 @@ namespace PBL3_DATVEXE.BLL
             }
         }
 
-       
+        public List<DTO_DelRoute> sort(Compare cmp, string id_route)
+        {
+            List<DTO_DelRoute> data = BLL_delRoute.Instance.getListdelroute_BLL(id_route);
+            for (int i = 0; i < data.Count - 1; i++)
+            {
+                for (int j = i + 1; j < data.Count; j++)
+                {
+                    if (cmp(data[i], data[j]))
+                    {
+                        DTO_DelRoute t = data[i];
+                        data[i] = data[j];
+                        data[j] = t;
+                    }
+                }
+            }
+            return data;
+        }
+
+        public delegate bool Compare(object s1, object s2);
+
     }
 }

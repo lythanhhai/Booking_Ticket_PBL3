@@ -183,13 +183,14 @@ namespace PBL3_DATVEXE.DAL
                                 gheTrong--;
                             }
                         }
-                        string time = Convert.ToString(listDetailRoute[i].time_start).Substring(10);
+                        string time = Convert.ToString(listDetailRoute[i].time_start).Substring(9);
                         list.Add(new Detail
                         {
                             id_detRoute = listDetailRoute[i].id_delRoute,
                             id_vehicle = listDetailRoute[i].id_vehicle,
+                            type = listVehicle[i].type.ToString(),
                             price = listDetailRoute[i].price,
-                            time_start = listDetailRoute[i].time_start,
+                            time_start = time,
                             departure = departure1,
                             arrival = arrival1,
                             empty_seat = gheTrong,
@@ -203,9 +204,6 @@ namespace PBL3_DATVEXE.DAL
                     }
                 }
             }
-
-
-
 
             return list;
             
@@ -241,6 +239,7 @@ namespace PBL3_DATVEXE.DAL
                 list.Add(new Person
                 {
                     id_person = i["id_person"].ToString(),
+                    id_login = i["id_login"].ToString(),
                     name = i["name"].ToString(),
                     phone = i["phone"].ToString(),
                     address = i["address"].ToString(),
@@ -271,48 +270,31 @@ namespace PBL3_DATVEXE.DAL
             return list;
         }
         // thêm khách hàng
-        public void addPerson_DAL(string id_person, string name, string phone, string address,string email)
+        public void addPerson_DAL(string id_person, string id_login, string name, string phone, string address,string email)
         {
-            string query = "insert into info_person(id_person,name,phone,address,email) values ('"
+            string query = "insert into info_person(id_person,id_login,name,phone,address,email) values (N'"
                 + id_person
-                + "','"
+                + "',N'"
+                + id_login 
+                + "',N'"
                 + name
-                + "','"
+                + "',N'"
                 + phone
-                + "','"
+                + "',N'"
                 + address 
-                + "','" +
+                + "',N'" +
                 email
                 + "')";
             DBHelper.Instance.executeQuery(query);
         }
         // thêm order
-        //public void addOrder_DAL(string id_order, string id_detRoute, string id_person, int numberTicket, double total_price, DateTime date_order)//2
-        //{
-        //    string query = "INSERT INTO [Order](id_order,id_detRoute,id_person,numberTicket,total_price,date_order) values "
-        //        + "('"
-        //        + id_order
-        //        + "','"
-        //        + id_detRoute
-        //        + "','"
-        //        + id_person
-        //        + "','"
-        //        + Convert.ToString(numberTicket)
-        //        + "','"
-        //        + Convert.ToString(total_price)
-        //        + "','"
-        //        + Convert.ToString(date_order)
-        //        + "')";
-
-        //    DBHelper.Instance.executeQuery(query);
-        //}
 
         public void addOrder_DAL(string id_order, string id_person, int numberTicket, double total_price, DateTime date_order)//2
         {
             string query = "INSERT INTO [Order](id_order,id_person,numberTicket,total_price,date_order) values "
-                + "('"
+                + "(N'"
                 + id_order
-                + "','"
+                + "',N'"
                 + id_person
                 + "','"
                 + Convert.ToString(numberTicket)
@@ -365,15 +347,15 @@ namespace PBL3_DATVEXE.DAL
         public string getMaxIdOrder()
         {
             string idOrder = "";
-            string Max = "";
+            int Max = 0;
             foreach(Order i in getALlOrder_DAL())
             {
-                if(String.Compare(i.id_order,Max) > 0)
+                if(Convert.ToInt32(i.id_order) > Max)
                 {
-                    Max = i.id_order;
+                    Max = Convert.ToInt32(i.id_order);
                 }    
             }
-            idOrder = Max;
+            idOrder = Convert.ToString(Max);
             return idOrder;
         }
 
@@ -381,15 +363,15 @@ namespace PBL3_DATVEXE.DAL
         public string getMaxIdPerson()
         {
             string idPerson = "";
-            string Max = "";
+            int Max = 0;
             foreach (Person i in getALlKhachHang_DAL())
             {
-                if (String.Compare(i.id_person, Max) > 0)
+                if (Convert.ToInt32(i.id_person) > Max)
                 {
-                    Max = i.id_person;
+                    Max = Convert.ToInt32(i.id_person);
                 }
             }
-            idPerson = Max;
+            idPerson = Convert.ToString(Max);
             return idPerson;
         }
 
@@ -399,5 +381,53 @@ namespace PBL3_DATVEXE.DAL
             string query = "Update orderSeat set status = 1,id_order = " + "'" + id_order + "'" + " where id_orderSeat = " + id_orderSeat.ToString();
             DBHelper.Instance.executeQuery(query);
         }
+
+        // lấy tất cả login 
+        public List<Login> getAllLogin()
+        {
+            List<Login> list = new List<Login>();
+            foreach(DataRow i in DBHelper.Instance.executeNonQuery("select * from Login").Rows)
+            {
+                list.Add(new Login
+                {
+                    id_login = i["id_login"].ToString(),
+                    userName = i["userName"].ToString(),
+                    passWord = i["passWord"].ToString(),
+                    row = Convert.ToInt32(i["row"].ToString()),
+                });
+            }    
+            return list;
+        }
+
+        // lấy id_login max
+        public string getId_login()
+        {
+            string id_login = "";
+            int Max = 0;
+            List<Login> list = getAllLogin();
+            foreach(Login i in list)
+            {
+                if (Convert.ToInt32(i.id_login) > Max)
+                {
+                    Max = Convert.ToInt32(i.id_login);
+                }
+            }
+            id_login = Convert.ToString(Max);
+            return id_login;
+        }
+        // thêm login khi đăng ký
+        public void insertLogin(string id_login,string username,string passWord)
+        {
+            string query = "Insert into Login values('"
+                + id_login
+                + "','"
+                + username
+                + "','"
+                + passWord
+                + "',"
+                + "1)";
+                
+            DBHelper.Instance.executeQuery(query);
+        }    
     }
 }
