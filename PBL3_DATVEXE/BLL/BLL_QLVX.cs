@@ -32,7 +32,7 @@ namespace PBL3_DATVEXE.BLL
             return DAL_QLVX.Instance.getallQLVX();
 
         }
-        public List<DTO_QLVX> getQLVXBY(string route, string vehicle, string date_route)
+      /*  public List<DTO_QLVX> getQLVXBY(string route, string vehicle, string date_route)
         {
             List<DTO_QLVX> data = new List<DTO_QLVX>();
             foreach (DTO_QLVX i in DAL_QLVX.Instance.getallQLVX())
@@ -60,7 +60,7 @@ namespace PBL3_DATVEXE.BLL
                
             }
             return data;
-        }
+        }*/
         public List<DTO_QLVX> getQLVXBY1(string route, string vehicle, string date_route,string name_person )
         {
             List<DTO_QLVX> data = new List<DTO_QLVX>();
@@ -90,23 +90,42 @@ namespace PBL3_DATVEXE.BLL
             }
             return data;
         }
-        public int tt(string route, string vehicle, string date_route)
+        public int tt(string route, string vehicle, string date_route, string name)
         {
             int a = 0;
-            foreach(DTO_QLVX i in BLL_QLVX.Instance.getQLVXBY(route,vehicle,date_route))
+            foreach(DTO_QLVX i in BLL_QLVX.Instance.getQLVXBY1(route,vehicle,date_route,name))
             {
                 a = a + i.number_ticket;
             }
             return a;
         }
-        public double tp(string route, string vehicle, string date_route)
+        public double tp(string route, string vehicle, string date_route,string name)
         {
             double b = 0;
-            foreach (DTO_QLVX i in BLL_QLVX.Instance.getQLVXBY(route, vehicle, date_route))
+            foreach (DTO_QLVX i in BLL_QLVX.Instance.getQLVXBY1(route, vehicle, date_route,name))
             {
                 b = b + i.total_price;
             }
             return b;
         }
+        public List<DTO_QLVX> sort(Compare cmp, string route, string vehicle, string date_route, string name)
+        {
+            List<DTO_QLVX> data = BLL_QLVX.Instance.getQLVXBY1(route, vehicle, date_route, name);
+            for (int i = 0; i < data.Count - 1; i++)
+            {
+                for (int j = i + 1; j < data.Count; j++)
+                {
+                    if (cmp(data[i], data[j]))
+                    {
+                        DTO_QLVX t = data[i];
+                        data[i] = data[j];
+                        data[j] = t;
+                    }
+                }
+            }
+            return data;
+        }
+
+        public delegate bool Compare(object s1, object s2);
     }
 }

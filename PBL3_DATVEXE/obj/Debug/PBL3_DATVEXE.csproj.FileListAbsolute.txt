@@ -41,11 +41,7 @@ C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.Properties.Resou
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.confirm.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.datVe.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.DetailSchedule.resources
-C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.Form1.resources
-C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.Form2.resources
-C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.Form3.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.infoTicket.resources
-C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.Form3.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.Register.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.csproj.GenerateResource.cache
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.csproj.CoreCompileInputs.cache
@@ -53,7 +49,6 @@ C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.exe
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.pdb
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.vehicle.resources
 D:\C#\detailPBL3\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.vehicle.resources
-C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.QLVX.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.Dataviz.WinForms.dll
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.Licensing.dll
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
@@ -120,7 +115,6 @@ C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.UI.WinForms.BunifuTogg
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
-C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.Route.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.exe.licenses
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.csproj.CopyComplete
 D:\C#\detailPBL3\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.Dataviz.WinForms.dll
@@ -298,3 +292,15 @@ D:\Documents\le\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl
 D:\Documents\le\PBL3\PBL3_DATVEXE\bin\Debug\login1.pdb
 D:\Documents\le\PBL3\PBL3_DATVEXE\bin\Debug\userControlSeeRoute.pdb
 D:\Documents\le\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.Add_detail.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.Admin.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.Detail_Route.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.main_ql.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.Route.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.seeRoute.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.seeTicket.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.TK_TK.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.Utils.dll
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\login1.pdb
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\userControlSeeRoute.pdb
