@@ -161,12 +161,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLL_delRoute.cs" />
+    <Compile Include="BLL\BLL_Order.cs" />
+    <Compile Include="BLL\BLL_Person.cs" />
     <Compile Include="BLL\BLL_QLVX.cs" />
     <Compile Include="BLL\BLL_Route.cs" />
     <Compile Include="BLL\BLL_TKVX.cs" />
     <Compile Include="BLL\BLL_vehicle.cs" />
     <Compile Include="DAL\DALL_route.cs" />
     <Compile Include="DAL\DAL_DelRoute.cs" />
+    <Compile Include="DAL\DAL_Order.cs" />
     <Compile Include="DAL\DAL_QLVX.cs" />
     <Compile Include="DAL\DAL_TKVX.cs" />
     <Compile Include="DAL\DAL_vehicle.cs" />
@@ -180,6 +183,7 @@
     <Compile Include="DTO\DTO_QLVX.cs" />
     <Compile Include="DTO\DTO_route.cs" />
     <Compile Include="DTO\DTO_vehicle.cs" />
+    <Compile Include="DTO\historyBook.cs" />
     <Compile Include="DTO\Login.cs" />
     <Compile Include="DTO\Order.cs" />
     <Compile Include="DTO\orderSeat.cs" />
@@ -187,8 +191,15 @@
     <Compile Include="DTO\Route.cs" />
     <Compile Include="DTO\Seat.cs" />
     <Compile Include="DTO\Vehicle.cs" />
+    <Compile Include="DTO\ViewSearchRoute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\AccountInformaition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AccountInformaition.designer.cs">
+      <DependentUpon>AccountInformaition.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Add-detail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +212,24 @@
     <Compile Include="View\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\AffterLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AffterLogin.designer.cs">
+      <DependentUpon>AffterLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\buttonAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\buttonAccount.designer.cs">
+      <DependentUpon>buttonAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\buttonSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\buttonSearch.designer.cs">
+      <DependentUpon>buttonSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\confirm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,7 +239,7 @@
     <Compile Include="View\datVe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\datVe.Designer.cs">
+    <Compile Include="View\datVe.designer.cs">
       <DependentUpon>datVe.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Detail Route.cs">
@@ -222,8 +251,14 @@
     <Compile Include="View\DetailSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\DetailSchedule.Designer.cs">
+    <Compile Include="View\DetailSchedule.designer.cs">
       <DependentUpon>DetailSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\historyBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\historyBook.designer.cs">
+      <DependentUpon>historyBook.cs</DependentUpon>
     </Compile>
     <Compile Include="View\infoTicket.cs">
       <SubType>Form</SubType>
@@ -237,10 +272,16 @@
     <Compile Include="View\main_ql.designer.cs">
       <DependentUpon>main_ql.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Pay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Pay.designer.cs">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Register.Designer.cs">
+    <Compile Include="View\Register.designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Route.cs">
@@ -248,6 +289,12 @@
     </Compile>
     <Compile Include="View\Route.designer.cs">
       <DependentUpon>Route.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SearchRout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SearchRout.designer.cs">
+      <DependentUpon>SearchRout.cs</DependentUpon>
     </Compile>
     <Compile Include="View\seeRoute.cs">
       <SubType>UserControl</SubType>
@@ -284,11 +331,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\AccountInformaition.resx">
+      <DependentUpon>AccountInformaition.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Add-detail.resx">
       <DependentUpon>Add-detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AffterLogin.resx">
+      <DependentUpon>AffterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\buttonAccount.resx">
+      <DependentUpon>buttonAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\buttonSearch.resx">
+      <DependentUpon>buttonSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\confirm.resx">
       <DependentUpon>confirm.cs</DependentUpon>
@@ -302,17 +361,26 @@
     <EmbeddedResource Include="View\DetailSchedule.resx">
       <DependentUpon>DetailSchedule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\historyBook.resx">
+      <DependentUpon>historyBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\infoTicket.resx">
       <DependentUpon>infoTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\main_ql.resx">
       <DependentUpon>main_ql.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Pay.resx">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Route.resx">
       <DependentUpon>Route.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SearchRout.resx">
+      <DependentUpon>SearchRout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\seeRoute.resx">
       <DependentUpon>seeRoute.cs</DependentUpon>
@@ -362,6 +430,27 @@
     <Content Include="Image\ImageH\user.png" />
     <Content Include="Image\ImageH\UserEvent.png" />
     <Content Include="Image\ImageH\xe-khách.jpg" />
+    <Content Include="Resources\11.png" />
+    <Content Include="Resources\111.png" />
+    <Content Include="Resources\112.png" />
+    <Content Include="Resources\background2.png" />
+    <Content Include="Resources\btsearch.png" />
+    <Content Include="Resources\bus.png" />
+    <Content Include="Resources\calendar.png" />
+    <Content Include="Resources\check.png" />
+    <Content Include="Resources\check1.png" />
+    <Content Include="Resources\check2.png" />
+    <Content Include="Resources\clock.png" />
+    <Content Include="Resources\clock1.png" />
+    <Content Include="Resources\exchange.png" />
+    <Content Include="Resources\IconClock.png" />
+    <Content Include="Resources\placeholder %281%29.png" />
+    <Content Include="Resources\Rf6070d5e5b2ea27c6a225e2ef7468427.png" />
+    <Content Include="Resources\route.png" />
+    <Content Include="Resources\tickets.png" />
+    <Content Include="Resources\user %281%29.png" />
+    <Content Include="Resources\user.png" />
+    <Content Include="Resources\user1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
