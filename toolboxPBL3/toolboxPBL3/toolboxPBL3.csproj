@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE210130-4B87-4430-A16D-9B6D088784B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>toolboxPBL3</RootNamespace>
+    <AssemblyName>toolboxPBL3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\OneDrive\Máy tính\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Dome3">
+      <HintPath>..\..\Dome3\Dome3\bin\Debug\Dome3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AffterLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AffterLogin.Designer.cs">
+      <DependentUpon>AffterLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="InformationEnter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationEnter.Designer.cs">
+      <DependentUpon>InformationEnter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liststicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Liststicket.Designer.cs">
+      <DependentUpon>Liststicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapSeatstype1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapSeatstype1.Designer.cs">
+      <DependentUpon>MapSeatstype1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchTicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchTicket.Designer.cs">
+      <DependentUpon>SearchTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sticket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sticket.Designer.cs">
+      <DependentUpon>Sticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSticket.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AffterLogin.resx">
+      <DependentUpon>AffterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationEnter.resx">
+      <DependentUpon>InformationEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liststicket.resx">
+      <DependentUpon>Liststicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapSeatstype1.resx">
+      <DependentUpon>MapSeatstype1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchTicket.resx">
+      <DependentUpon>SearchTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sticket.resx">
+      <DependentUpon>Sticket.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundsaudangnhap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saudangnhap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userbt11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free_Sample_By_Wix %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free_Sample_By_Wix %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free_Sample_By_Wix %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free_Sample_By_Wix %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free_Sample_By_Wix %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cach-lam-anh-dai-dien-facebook-trong-khong-14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundsaudangnhap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saudangnhap11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free_Sample_By_Wix %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bttimchuyen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free_Sample_By_Wix %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlisttuyen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tuyen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonxapxep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonxapxep1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonxapxep2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sticket1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sticket2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapSeats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-phone-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-open-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-test-account-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-notepad-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btsearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btsearch1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
