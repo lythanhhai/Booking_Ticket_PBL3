@@ -172,6 +172,7 @@ namespace PBL3_DATVEXE.View
         private void bpbSignIn_Click(object sender, EventArgs e)
         {
             int count = 0;
+            int row = -1;
             string id_login = "";
             AffterLogin aflogin = new AffterLogin();
             foreach (Login i in BLL_TKVX.Instance.getAllLogin_BLL())
@@ -181,10 +182,11 @@ namespace PBL3_DATVEXE.View
 
                     count++;
                     id_login = i.id_login;
+                    row = i.row;
                     break;
                 }
             }
-            if (count > 0)
+            if (count > 0&& row==1)
             {
 
                 //ds.Show();
@@ -196,7 +198,13 @@ namespace PBL3_DATVEXE.View
                 //this.Hide();
             }
 
-            else
+            if(count > 0 && row == 0)
+            {
+                main_ql f = new main_ql();
+                f.Show();
+                
+            }
+            if(count==0)
             {
                 lbErrorPassSignIn.Text = "Username or Password is incorrect";
             }
