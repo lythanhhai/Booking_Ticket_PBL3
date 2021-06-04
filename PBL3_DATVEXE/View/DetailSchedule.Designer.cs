@@ -33,7 +33,6 @@ namespace PBL3_DATVEXE.View
             this.gb1 = new System.Windows.Forms.GroupBox();
             this.bunifuVScrollBar2 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.But_trove = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pnGioSomNhat = new System.Windows.Forms.Panel();
             this.lbGioSomNhat = new System.Windows.Forms.Label();
@@ -113,23 +112,11 @@ namespace PBL3_DATVEXE.View
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1042, 559);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
-            // But_trove
-            // 
-            this.But_trove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.But_trove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.But_trove.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.But_trove.Location = new System.Drawing.Point(38, 34);
-            this.But_trove.Name = "But_trove";
-            this.But_trove.Size = new System.Drawing.Size(88, 45);
-            this.But_trove.TabIndex = 2;
-            this.But_trove.Text = "Trở về";
-            this.But_trove.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(222, 42);
+            this.label1.Location = new System.Drawing.Point(93, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 25);
             this.label1.TabIndex = 8;
@@ -139,7 +126,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.pnGioSomNhat.Controls.Add(this.lbGioSomNhat);
             this.pnGioSomNhat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnGioSomNhat.Location = new System.Drawing.Point(391, 28);
+            this.pnGioSomNhat.Location = new System.Drawing.Point(278, 28);
             this.pnGioSomNhat.Name = "pnGioSomNhat";
             this.pnGioSomNhat.Size = new System.Drawing.Size(150, 55);
             this.pnGioSomNhat.TabIndex = 9;
@@ -160,7 +147,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.pnGioMuonNhat.Controls.Add(this.lbGioMuonNhat);
             this.pnGioMuonNhat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnGioMuonNhat.Location = new System.Drawing.Point(558, 28);
+            this.pnGioMuonNhat.Location = new System.Drawing.Point(459, 28);
             this.pnGioMuonNhat.Name = "pnGioMuonNhat";
             this.pnGioMuonNhat.Size = new System.Drawing.Size(160, 55);
             this.pnGioMuonNhat.TabIndex = 10;
@@ -181,7 +168,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.pnGiaThapNhat.Controls.Add(this.lbGiaThapNhat);
             this.pnGiaThapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnGiaThapNhat.Location = new System.Drawing.Point(732, 28);
+            this.pnGiaThapNhat.Location = new System.Drawing.Point(645, 28);
             this.pnGiaThapNhat.Name = "pnGiaThapNhat";
             this.pnGiaThapNhat.Size = new System.Drawing.Size(145, 55);
             this.pnGiaThapNhat.TabIndex = 10;
@@ -202,7 +189,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.pnGiaCaoNhat.Controls.Add(this.lbGiaCaoNhat);
             this.pnGiaCaoNhat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnGiaCaoNhat.Location = new System.Drawing.Point(893, 28);
+            this.pnGiaCaoNhat.Location = new System.Drawing.Point(820, 28);
             this.pnGiaCaoNhat.Name = "pnGiaCaoNhat";
             this.pnGiaCaoNhat.Size = new System.Drawing.Size(145, 55);
             this.pnGiaCaoNhat.TabIndex = 10;
@@ -232,7 +219,6 @@ namespace PBL3_DATVEXE.View
             this.Controls.Add(this.gb1);
             this.Controls.Add(this.pnGioMuonNhat);
             this.Controls.Add(this.pnGioSomNhat);
-            this.Controls.Add(this.But_trove);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DetailSchedule";
@@ -255,7 +241,6 @@ namespace PBL3_DATVEXE.View
         #endregion
 
         private System.Windows.Forms.GroupBox gb1;
-        private System.Windows.Forms.Button But_trove;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar2;
         private System.Windows.Forms.Label label1;

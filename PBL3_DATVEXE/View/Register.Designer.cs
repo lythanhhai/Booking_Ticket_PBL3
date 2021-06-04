@@ -228,7 +228,7 @@ namespace PBL3_DATVEXE.View
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(615, 601);
+            this.tabPage2.Size = new System.Drawing.Size(615, 606);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -246,7 +246,7 @@ namespace PBL3_DATVEXE.View
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(609, 595);
+            this.panel1.Size = new System.Drawing.Size(609, 600);
             this.panel1.TabIndex = 0;
             // 
             // lbErrorDontTick
@@ -501,7 +501,7 @@ namespace PBL3_DATVEXE.View
             this.bpbSignUp.BorderRadius = 87;
             this.bpbSignUp.Image = global::PBL3_DATVEXE.Properties.Resources.signUp;
             this.bpbSignUp.IsCircle = true;
-            this.bpbSignUp.Location = new System.Drawing.Point(229, 438);
+            this.bpbSignUp.Location = new System.Drawing.Point(229, 441);
             this.bpbSignUp.Name = "bpbSignUp";
             this.bpbSignUp.Size = new System.Drawing.Size(174, 174);
             this.bpbSignUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -517,7 +517,7 @@ namespace PBL3_DATVEXE.View
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(615, 606);
+            this.tabPage1.Size = new System.Drawing.Size(615, 603);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
@@ -538,7 +538,7 @@ namespace PBL3_DATVEXE.View
             this.pn.Location = new System.Drawing.Point(3, 3);
             this.pn.Name = "pn";
             this.pn.ShowBorders = true;
-            this.pn.Size = new System.Drawing.Size(609, 600);
+            this.pn.Size = new System.Drawing.Size(609, 597);
             this.pn.TabIndex = 15;
             // 
             // checkRemember
@@ -563,7 +563,7 @@ namespace PBL3_DATVEXE.View
             this.bpbSignIn.BorderRadius = 87;
             this.bpbSignIn.Image = global::PBL3_DATVEXE.Properties.Resources.siginIn;
             this.bpbSignIn.IsCircle = true;
-            this.bpbSignIn.Location = new System.Drawing.Point(218, 421);
+            this.bpbSignIn.Location = new System.Drawing.Point(218, 419);
             this.bpbSignIn.Name = "bpbSignIn";
             this.bpbSignIn.Size = new System.Drawing.Size(174, 174);
             this.bpbSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -727,7 +727,7 @@ namespace PBL3_DATVEXE.View
             this.bunifuPages1.PageName = "tabPage1";
             this.bunifuPages1.PageTitle = "tabPage1";
             this.bunifuPages1.SelectedIndex = 0;
-            this.bunifuPages1.Size = new System.Drawing.Size(623, 639);
+            this.bunifuPages1.Size = new System.Drawing.Size(623, 636);
             this.bunifuPages1.TabIndex = 15;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -755,7 +755,7 @@ namespace PBL3_DATVEXE.View
             this.ClientSize = new System.Drawing.Size(1062, 639);
             this.Controls.Add(this.bunifuPages1);
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Register";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
