@@ -32,7 +32,10 @@ namespace PBL3_DATVEXE.BLL
         {
             return DAL_TKVX.Instance.getALLXe_DAL();
         }
-
+        public string getid(string order)
+        {
+            return DAL_TKVX.Instance.getidperson(order);
+        }
         // lấy tất cả tuyến mà người dùng đã chọn
         public List<Detail> getALLDetailSchedule_BLL(string departure1, string arrival1, DateTime date1)
         {
@@ -73,7 +76,32 @@ namespace PBL3_DATVEXE.BLL
         {
             return DAL_TKVX.Instance.getALlKhachHang_DAL();
         }
+        // lấy tất cả order
+        public List<Order> getallorder()
+        {
+            return DAL_TKVX.Instance.getALlOrder_DAL();
+        }
+        public List<Order> getallorder1(string id_order)
+        {
+            List<Order> data = new List<Order>();
+            foreach (Order i in DAL_TKVX.Instance.getALlOrder_DAL())
+            {
+                if (i.id_order.Contains(id_order))
+                {
 
+                    data.Add(new Order
+                    {
+                        id_order = i.id_order,
+                        id_person = i.id_person,
+                        numberTicket = i.numberTicket,
+                        total_price=i.total_price,
+                        date_order=i.date_order
+                    }) ;
+                }
+            }
+            return data;
+
+        }
         // lấy id_order max trong dal để khi push vào bảng Order không bị trùng khóa
         public string getMaxIdOrder_BLL()
         {

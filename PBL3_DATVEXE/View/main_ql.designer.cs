@@ -42,6 +42,7 @@ namespace PBL3_DATVEXE.View
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -51,6 +52,7 @@ namespace PBL3_DATVEXE.View
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(66)))), ((int)(((byte)(81)))));
+            this.panel1.Controls.Add(this.iconButton5);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.bunifuPictureBox1);
             this.panel1.Controls.Add(this.label1);
@@ -226,6 +228,27 @@ namespace PBL3_DATVEXE.View
             this.panel4.Size = new System.Drawing.Size(742, 438);
             this.panel4.TabIndex = 2;
             // 
+            // iconButton5
+            // 
+            this.iconButton5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(66)))), ((int)(((byte)(81)))));
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton5.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.MousePointer;
+            this.iconButton5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(203)))), ((int)(((byte)(132)))));
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton5.IconSize = 30;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.iconButton5.Location = new System.Drawing.Point(0, 368);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(167, 50);
+            this.iconButton5.TabIndex = 5;
+            this.iconButton5.Text = "Xác Nhận Thanh Toán";
+            this.iconButton5.UseVisualStyleBackColor = false;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
+            // 
             // main_ql
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,7 +260,6 @@ namespace PBL3_DATVEXE.View
             this.Controls.Add(this.panel1);
             this.Name = "main_ql";
             this.Text = "main_ql";
-//            this.Load += new System.EventHandler(this.main_ql_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
@@ -262,5 +284,6 @@ namespace PBL3_DATVEXE.View
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private FontAwesome.Sharp.IconButton iconButton5;
     }
 }

@@ -412,3 +412,4 @@ D:\Documents\GitHub\PBL3\PBL3_DATVEXE\bin\Debug\Bunifu.UI.WinForms.BunifuUserCon
 D:\Documents\GitHub\PBL3\PBL3_DATVEXE\bin\Debug\login1.pdb
 D:\Documents\GitHub\PBL3\PBL3_DATVEXE\bin\Debug\userControlSeeRoute.pdb
 D:\Documents\GitHub\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.csproj.CopyComplete
+D:\Documents\GitHub\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.thanhtoan.resources

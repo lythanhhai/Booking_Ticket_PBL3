@@ -18,7 +18,7 @@ namespace PBL3_DATVEXE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Detail_Route());
+            Application.Run(new thanhtoan());
         }
     }
 }

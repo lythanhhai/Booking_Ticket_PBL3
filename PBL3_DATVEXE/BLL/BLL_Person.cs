@@ -35,5 +35,10 @@ namespace PBL3_DATVEXE.BLL
             }
             return obj;
         }
+        public void update(string id)
+        {
+           string q= "update info_person set permission='"+1+"'where id_person='"+id+"'";
+            DB_H.Instance.Ex(q);
+        }
     }
 }

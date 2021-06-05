@@ -302,6 +302,12 @@
     <Compile Include="View\seeTicket.Designer.cs">
       <DependentUpon>seeTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\thanhtoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\thanhtoan.Designer.cs">
+      <DependentUpon>thanhtoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TK_TK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -378,6 +384,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\seeTicket.resx">
       <DependentUpon>seeTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\thanhtoan.resx">
+      <DependentUpon>thanhtoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TK_TK.resx">
       <DependentUpon>TK_TK.cs</DependentUpon>

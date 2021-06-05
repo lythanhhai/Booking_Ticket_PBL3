@@ -269,6 +269,18 @@ namespace PBL3_DATVEXE.DAL
             }
             return list;
         }
+        public string getidperson(string id_order)
+        {
+            string s = "";
+            foreach (DataRow i in DBHelper.Instance.executeNonQuery("select * from [Order]").Rows)
+            {
+                if(id_order==i["id_order"].ToString())
+                {
+                    s = i["id_person"].ToString();
+                }    
+            }    
+                return s;
+        }
         // thêm khách hàng
         public void addPerson_DAL(string id_person, string id_login, string name, string phone, string address, string email)
         {
