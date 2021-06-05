@@ -96,12 +96,13 @@ namespace PBL3_DATVEXE.View
             if (listOrderSeat.Count > 0)
             {
                 //BLL_TKVX.Instance.addOrder_BLL(id_order, this.id_detRoute, id_person, this.soVe, this.tongGia, DateTime.Now);
-              BLL_TKVX.Instance.addOrder_BLL(id_order, id_person, this.soVe, this.tongGia, DateTime.Now);
+                BLL_TKVX.Instance.addOrder_BLL(id_order, id_person, this.soVe, this.tongGia, DateTime.Now);
                 for (int i = 0; i < listOrderSeat.Count; i++)
                 {
                     BLL_TKVX.Instance.updateOrderSeat_BLL(listOrderSeat[i], id_order);
                 }
-                MessageBox.Show("ok");
+                Payment payment = new Payment(Properties.Settings.Default.id_login, id_person, id_order);
+                payment.Show();
             }
             else
             {

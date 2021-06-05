@@ -306,7 +306,6 @@ C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\login1.pdb
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\bin\Debug\userControlSeeRoute.pdb
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.AccountInformaition.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.AffterLogin.resources
-C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.buttonAccount.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.buttonSearch.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.historyBook.resources
 C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.Pay.resources
@@ -413,3 +412,5 @@ D:\Documents\GitHub\PBL3\PBL3_DATVEXE\bin\Debug\login1.pdb
 D:\Documents\GitHub\PBL3\PBL3_DATVEXE\bin\Debug\userControlSeeRoute.pdb
 D:\Documents\GitHub\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.csproj.CopyComplete
 D:\Documents\GitHub\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.thanhtoan.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.Payment.resources
+C:\Users\ADMIN\Desktop\PBL3\PBL3_DATVEXE\obj\Debug\PBL3_DATVEXE.View.thanhtoan.resources

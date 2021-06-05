@@ -162,6 +162,7 @@
   <ItemGroup>
     <Compile Include="BLL\BLL_delRoute.cs" />
     <Compile Include="BLL\BLL_Order.cs" />
+    <Compile Include="BLL\BLL_Payment.cs" />
     <Compile Include="BLL\BLL_Person.cs" />
     <Compile Include="BLL\BLL_QLVX.cs" />
     <Compile Include="BLL\BLL_Route.cs" />
@@ -170,6 +171,7 @@
     <Compile Include="DAL\DALL_route.cs" />
     <Compile Include="DAL\DAL_DelRoute.cs" />
     <Compile Include="DAL\DAL_Order.cs" />
+    <Compile Include="DAL\DAL_Payment.cs" />
     <Compile Include="DAL\DAL_QLVX.cs" />
     <Compile Include="DAL\DAL_TKVX.cs" />
     <Compile Include="DAL\DAL_vehicle.cs" />
@@ -187,6 +189,7 @@
     <Compile Include="DTO\Login.cs" />
     <Compile Include="DTO\Order.cs" />
     <Compile Include="DTO\orderSeat.cs" />
+    <Compile Include="DTO\Payment.cs" />
     <Compile Include="DTO\Person.cs" />
     <Compile Include="DTO\Route.cs" />
     <Compile Include="DTO\Seat.cs" />
@@ -271,6 +274,12 @@
     </Compile>
     <Compile Include="View\Pay.designer.cs">
       <DependentUpon>Pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Payment.designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Register.cs">
       <SubType>Form</SubType>
@@ -370,6 +379,9 @@
     <EmbeddedResource Include="View\Pay.resx">
       <DependentUpon>Pay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
@@ -430,6 +442,7 @@
     <Content Include="Image\ImageH\user.png" />
     <Content Include="Image\ImageH\UserEvent.png" />
     <Content Include="Image\ImageH\xe-khách.jpg" />
+    <None Include="Resources\clock2.png" />
     <None Include="Resources\user1.png" />
     <None Include="Resources\user.png" />
     <None Include="Resources\user %281%29.png" />

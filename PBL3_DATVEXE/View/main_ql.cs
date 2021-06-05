@@ -134,7 +134,7 @@ namespace PBL3_DATVEXE.View
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new TK_TK());
+            OpenChildForm(new thanhtoan());
         }
 
 
