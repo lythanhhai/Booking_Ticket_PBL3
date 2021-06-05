@@ -65,7 +65,7 @@ namespace PBL3_DATVEXE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _11 {
             get {
-                object obj = ResourceManager.GetObject("11", resourceCulture);
+                object obj = ResourceManager.GetObject("_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace PBL3_DATVEXE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _111 {
             get {
-                object obj = ResourceManager.GetObject("111", resourceCulture);
+                object obj = ResourceManager.GetObject("_111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace PBL3_DATVEXE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _112 {
             get {
-                object obj = ResourceManager.GetObject("112", resourceCulture);
+                object obj = ResourceManager.GetObject("_112", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +193,16 @@ namespace PBL3_DATVEXE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clock2 {
+            get {
+                object obj = ResourceManager.GetObject("clock2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Confirm {
             get {
                 object obj = ResourceManager.GetObject("Confirm", resourceCulture);
@@ -285,7 +295,7 @@ namespace PBL3_DATVEXE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap placeholder__1_ {
             get {
-                object obj = ResourceManager.GetObject("placeholder (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("placeholder__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +306,26 @@ namespace PBL3_DATVEXE.Properties {
         internal static System.Drawing.Bitmap Rf6070d5e5b2ea27c6a225e2ef7468427 {
             get {
                 object obj = ResourceManager.GetObject("Rf6070d5e5b2ea27c6a225e2ef7468427", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rf6070d5e5b2ea27c6a225e2ef74684271 {
+            get {
+                object obj = ResourceManager.GetObject("Rf6070d5e5b2ea27c6a225e2ef74684271", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rf6070d5e5b2ea27c6a225e2ef74684272 {
+            get {
+                object obj = ResourceManager.GetObject("Rf6070d5e5b2ea27c6a225e2ef74684272", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -425,7 +455,7 @@ namespace PBL3_DATVEXE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user__1_ {
             get {
-                object obj = ResourceManager.GetObject("user (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("user__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,9 +473,9 @@ namespace PBL3_DATVEXE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap user2 {
+        internal static System.Drawing.Bitmap user11 {
             get {
-                object obj = ResourceManager.GetObject("user2", resourceCulture);
+                object obj = ResourceManager.GetObject("user11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

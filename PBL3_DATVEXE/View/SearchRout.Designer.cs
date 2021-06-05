@@ -30,18 +30,18 @@ namespace PBL3_DATVEXE.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchRout));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties49 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties50 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties51 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties52 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties53 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties54 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties55 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties56 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties57 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties58 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties59 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties60 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -76,6 +76,9 @@ namespace PBL3_DATVEXE.View
             this.txtKt = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.but_timChuyen = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -88,6 +91,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
@@ -101,16 +105,16 @@ namespace PBL3_DATVEXE.View
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.panel1.Location = new System.Drawing.Point(126, 155);
+            this.panel1.Location = new System.Drawing.Point(88, 155);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 144);
+            this.panel1.Size = new System.Drawing.Size(179, 148);
             this.panel1.TabIndex = 11;
             this.panel1.Visible = false;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(11, 318);
+            this.label16.Location = new System.Drawing.Point(10, 336);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(81, 19);
             this.label16.TabIndex = 1;
@@ -120,7 +124,7 @@ namespace PBL3_DATVEXE.View
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(11, 290);
+            this.label15.Location = new System.Drawing.Point(10, 308);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(77, 19);
             this.label15.TabIndex = 1;
@@ -130,7 +134,7 @@ namespace PBL3_DATVEXE.View
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(11, 256);
+            this.label14.Location = new System.Drawing.Point(10, 274);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 19);
             this.label14.TabIndex = 1;
@@ -140,7 +144,7 @@ namespace PBL3_DATVEXE.View
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(8, 224);
+            this.label13.Location = new System.Drawing.Point(7, 242);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 19);
             this.label13.TabIndex = 1;
@@ -150,7 +154,7 @@ namespace PBL3_DATVEXE.View
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(8, 191);
+            this.label12.Location = new System.Drawing.Point(7, 209);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(42, 19);
             this.label12.TabIndex = 1;
@@ -160,7 +164,7 @@ namespace PBL3_DATVEXE.View
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 141);
+            this.label10.Location = new System.Drawing.Point(7, 159);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(63, 19);
             this.label10.TabIndex = 1;
@@ -170,7 +174,7 @@ namespace PBL3_DATVEXE.View
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(5, 111);
+            this.label9.Location = new System.Drawing.Point(4, 129);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(78, 19);
             this.label9.TabIndex = 1;
@@ -180,7 +184,7 @@ namespace PBL3_DATVEXE.View
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 82);
+            this.label8.Location = new System.Drawing.Point(3, 100);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(89, 19);
             this.label8.TabIndex = 1;
@@ -190,7 +194,7 @@ namespace PBL3_DATVEXE.View
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 53);
+            this.label7.Location = new System.Drawing.Point(2, 71);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 19);
             this.label7.TabIndex = 1;
@@ -200,7 +204,7 @@ namespace PBL3_DATVEXE.View
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 27);
+            this.label6.Location = new System.Drawing.Point(3, 45);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 19);
             this.label6.TabIndex = 1;
@@ -211,7 +215,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(8, 166);
+            this.label11.Location = new System.Drawing.Point(7, 184);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(109, 19);
             this.label11.TabIndex = 0;
@@ -221,7 +225,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Location = new System.Drawing.Point(2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(127, 19);
             this.label5.TabIndex = 0;
@@ -231,6 +235,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.label26);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
@@ -244,16 +249,16 @@ namespace PBL3_DATVEXE.View
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label24);
             this.panel2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.panel2.Location = new System.Drawing.Point(442, 155);
+            this.panel2.Location = new System.Drawing.Point(431, 155);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(179, 140);
+            this.panel2.Size = new System.Drawing.Size(179, 148);
             this.panel2.TabIndex = 11;
             this.panel2.Visible = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 310);
+            this.label1.Location = new System.Drawing.Point(6, 336);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 19);
             this.label1.TabIndex = 1;
@@ -263,7 +268,7 @@ namespace PBL3_DATVEXE.View
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 282);
+            this.label2.Location = new System.Drawing.Point(6, 308);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 19);
             this.label2.TabIndex = 1;
@@ -273,7 +278,7 @@ namespace PBL3_DATVEXE.View
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 248);
+            this.label3.Location = new System.Drawing.Point(6, 274);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 19);
             this.label3.TabIndex = 1;
@@ -283,7 +288,7 @@ namespace PBL3_DATVEXE.View
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 216);
+            this.label4.Location = new System.Drawing.Point(3, 242);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 19);
             this.label4.TabIndex = 1;
@@ -293,7 +298,7 @@ namespace PBL3_DATVEXE.View
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(7, 183);
+            this.label17.Location = new System.Drawing.Point(3, 209);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(42, 19);
             this.label17.TabIndex = 1;
@@ -303,7 +308,7 @@ namespace PBL3_DATVEXE.View
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(7, 133);
+            this.label18.Location = new System.Drawing.Point(3, 159);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(63, 19);
             this.label18.TabIndex = 1;
@@ -313,7 +318,7 @@ namespace PBL3_DATVEXE.View
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(4, 103);
+            this.label19.Location = new System.Drawing.Point(0, 129);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(78, 19);
             this.label19.TabIndex = 1;
@@ -323,7 +328,7 @@ namespace PBL3_DATVEXE.View
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(3, 74);
+            this.label20.Location = new System.Drawing.Point(-1, 100);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(89, 19);
             this.label20.TabIndex = 1;
@@ -333,7 +338,7 @@ namespace PBL3_DATVEXE.View
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(3, 45);
+            this.label21.Location = new System.Drawing.Point(-1, 71);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(67, 19);
             this.label21.TabIndex = 1;
@@ -343,7 +348,7 @@ namespace PBL3_DATVEXE.View
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(7, 19);
+            this.label22.Location = new System.Drawing.Point(3, 45);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(58, 19);
             this.label22.TabIndex = 1;
@@ -354,7 +359,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label23.Location = new System.Drawing.Point(7, 158);
+            this.label23.Location = new System.Drawing.Point(3, 184);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(109, 19);
             this.label23.TabIndex = 0;
@@ -374,7 +379,7 @@ namespace PBL3_DATVEXE.View
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::PBL3_DATVEXE.Properties.Resources.placeholder__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(68, 85);
+            this.pictureBox3.Location = new System.Drawing.Point(25, 85);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(52, 55);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -446,33 +451,33 @@ namespace PBL3_DATVEXE.View
             this.txtBd.IconRight = null;
             this.txtBd.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBd.Lines = new string[0];
-            this.txtBd.Location = new System.Drawing.Point(126, 85);
+            this.txtBd.Location = new System.Drawing.Point(88, 85);
             this.txtBd.MaxLength = 32767;
             this.txtBd.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBd.Modified = false;
             this.txtBd.Multiline = false;
             this.txtBd.Name = "txtBd";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBd.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBd.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBd.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBd.OnIdleState = stateProperties4;
-            this.txtBd.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties49.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties49.FillColor = System.Drawing.Color.Empty;
+            stateProperties49.ForeColor = System.Drawing.Color.Empty;
+            stateProperties49.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBd.OnActiveState = stateProperties49;
+            stateProperties50.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties50.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties50.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBd.OnDisabledState = stateProperties50;
+            stateProperties51.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties51.FillColor = System.Drawing.Color.Empty;
+            stateProperties51.ForeColor = System.Drawing.Color.Empty;
+            stateProperties51.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBd.OnHoverState = stateProperties51;
+            stateProperties52.BorderColor = System.Drawing.Color.Silver;
+            stateProperties52.FillColor = System.Drawing.Color.White;
+            stateProperties52.ForeColor = System.Drawing.Color.Empty;
+            stateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBd.OnIdleState = stateProperties52;
+            this.txtBd.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtBd.PasswordChar = '\0';
             this.txtBd.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBd.PlaceholderText = "Bắt đầu";
@@ -527,27 +532,27 @@ namespace PBL3_DATVEXE.View
             this.txtCalendar.Modified = false;
             this.txtCalendar.Multiline = false;
             this.txtCalendar.Name = "txtCalendar";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCalendar.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtCalendar.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCalendar.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCalendar.OnIdleState = stateProperties8;
-            this.txtCalendar.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties53.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties53.FillColor = System.Drawing.Color.Empty;
+            stateProperties53.ForeColor = System.Drawing.Color.Empty;
+            stateProperties53.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtCalendar.OnActiveState = stateProperties53;
+            stateProperties54.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties54.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties54.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtCalendar.OnDisabledState = stateProperties54;
+            stateProperties55.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties55.FillColor = System.Drawing.Color.Empty;
+            stateProperties55.ForeColor = System.Drawing.Color.Empty;
+            stateProperties55.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtCalendar.OnHoverState = stateProperties55;
+            stateProperties56.BorderColor = System.Drawing.Color.Silver;
+            stateProperties56.FillColor = System.Drawing.Color.White;
+            stateProperties56.ForeColor = System.Drawing.Color.Empty;
+            stateProperties56.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtCalendar.OnIdleState = stateProperties56;
+            this.txtCalendar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtCalendar.PasswordChar = '\0';
             this.txtCalendar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtCalendar.PlaceholderText = "Ngày";
@@ -597,33 +602,33 @@ namespace PBL3_DATVEXE.View
             this.txtKt.IconRight = null;
             this.txtKt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtKt.Lines = new string[0];
-            this.txtKt.Location = new System.Drawing.Point(442, 85);
+            this.txtKt.Location = new System.Drawing.Point(431, 85);
             this.txtKt.MaxLength = 32767;
             this.txtKt.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtKt.Modified = false;
             this.txtKt.Multiline = false;
             this.txtKt.Name = "txtKt";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtKt.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtKt.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtKt.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtKt.OnIdleState = stateProperties12;
-            this.txtKt.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties57.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties57.FillColor = System.Drawing.Color.Empty;
+            stateProperties57.ForeColor = System.Drawing.Color.Empty;
+            stateProperties57.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtKt.OnActiveState = stateProperties57;
+            stateProperties58.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties58.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtKt.OnDisabledState = stateProperties58;
+            stateProperties59.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties59.FillColor = System.Drawing.Color.Empty;
+            stateProperties59.ForeColor = System.Drawing.Color.Empty;
+            stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtKt.OnHoverState = stateProperties59;
+            stateProperties60.BorderColor = System.Drawing.Color.Silver;
+            stateProperties60.FillColor = System.Drawing.Color.White;
+            stateProperties60.ForeColor = System.Drawing.Color.Empty;
+            stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtKt.OnIdleState = stateProperties60;
+            this.txtKt.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtKt.PasswordChar = '\0';
             this.txtKt.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtKt.PlaceholderText = "Kết thúc";
@@ -651,7 +656,7 @@ namespace PBL3_DATVEXE.View
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::PBL3_DATVEXE.Properties.Resources.exchange;
-            this.pictureBox2.Location = new System.Drawing.Point(321, 85);
+            this.pictureBox2.Location = new System.Drawing.Point(285, 85);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(56, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -665,12 +670,47 @@ namespace PBL3_DATVEXE.View
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::PBL3_DATVEXE.Properties.Resources.placeholder__1_;
-            this.pictureBox4.Location = new System.Drawing.Point(383, 85);
+            this.pictureBox4.Location = new System.Drawing.Point(364, 85);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(52, 55);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
+            // 
+            // but_timChuyen
+            // 
+            this.but_timChuyen.BackColor = System.Drawing.Color.Transparent;
+            this.but_timChuyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.but_timChuyen.Location = new System.Drawing.Point(416, 314);
+            this.but_timChuyen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.but_timChuyen.Name = "but_timChuyen";
+            this.but_timChuyen.Size = new System.Drawing.Size(105, 42);
+            this.but_timChuyen.TabIndex = 22;
+            this.but_timChuyen.Text = "Tìm Chuyến";
+            this.but_timChuyen.UseVisualStyleBackColor = false;
+            this.but_timChuyen.Click += new System.EventHandler(this.but_timChuyen_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(4, 19);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(75, 19);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Quảng Trị";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label25.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(-1, 19);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(75, 19);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "Quảng Trị";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label26.Click += new System.EventHandler(this.label22_Click);
             // 
             // SearchRout
             // 
@@ -679,6 +719,7 @@ namespace PBL3_DATVEXE.View
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::PBL3_DATVEXE.Properties.Resources.background2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.but_timChuyen);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -690,7 +731,7 @@ namespace PBL3_DATVEXE.View
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "SearchRout";
-            this.Size = new System.Drawing.Size(997, 609);
+            this.Size = new System.Drawing.Size(949, 564);
             this.Click += new System.EventHandler(this.SearchRout_Click);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuTextBox1_MouseDown);
             this.panel1.ResumeLayout(false);
@@ -740,5 +781,8 @@ namespace PBL3_DATVEXE.View
         private Bunifu.UI.WinForms.BunifuTextBox txtCalendar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button but_timChuyen;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }

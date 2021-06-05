@@ -39,7 +39,6 @@ namespace PBL3_DATVEXE.View
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtNote = new System.Windows.Forms.TextBox();
             this.But_xacnhan = new System.Windows.Forms.Button();
-            this.But_xemthongtin = new System.Windows.Forms.Button();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -155,25 +154,13 @@ namespace PBL3_DATVEXE.View
             // 
             this.But_xacnhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
             this.But_xacnhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.But_xacnhan.Location = new System.Drawing.Point(339, 537);
+            this.But_xacnhan.Location = new System.Drawing.Point(202, 536);
             this.But_xacnhan.Name = "But_xacnhan";
             this.But_xacnhan.Size = new System.Drawing.Size(147, 52);
             this.But_xacnhan.TabIndex = 8;
             this.But_xacnhan.Text = "Xác nhận";
             this.But_xacnhan.UseVisualStyleBackColor = false;
             this.But_xacnhan.Click += new System.EventHandler(this.But_xacnhan_Click);
-            // 
-            // But_xemthongtin
-            // 
-            this.But_xemthongtin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
-            this.But_xemthongtin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.But_xemthongtin.Location = new System.Drawing.Point(103, 537);
-            this.But_xemthongtin.Name = "But_xemthongtin";
-            this.But_xemthongtin.Size = new System.Drawing.Size(150, 52);
-            this.But_xemthongtin.TabIndex = 9;
-            this.But_xemthongtin.Text = "Xem thông tin vé";
-            this.But_xemthongtin.UseVisualStyleBackColor = false;
-            this.But_xemthongtin.Click += new System.EventHandler(this.But_xemthongtin_Click);
             // 
             // bunifuPanel1
             // 
@@ -245,7 +232,6 @@ namespace PBL3_DATVEXE.View
             this.panelMain.Controls.Add(this.bunifuPanel4);
             this.panelMain.Controls.Add(this.bunifuPanel3);
             this.panelMain.Controls.Add(this.bunifuPanel2);
-            this.panelMain.Controls.Add(this.But_xemthongtin);
             this.panelMain.Controls.Add(this.But_xacnhan);
             this.panelMain.Controls.Add(this.txtNote);
             this.panelMain.Controls.Add(this.txtEmail);
@@ -305,7 +291,6 @@ namespace PBL3_DATVEXE.View
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtNote;
         private System.Windows.Forms.Button But_xacnhan;
-        private System.Windows.Forms.Button But_xemthongtin;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;

@@ -57,7 +57,7 @@ namespace PBL3_DATVEXE
         }
         public void Show1(string id_route, string name)
         {
-            bunifuDataGridView1.DataSource = BLL_delRoute.Instance.getListdelroute_BLL(id_route);
+            bunifuDataGridView1.DataSource = BLL_delRoute.Instance.getListdelroute_BLL(id_route, name);
 
 
         }
@@ -99,31 +99,31 @@ namespace PBL3_DATVEXE
         {
             if (bunifuDropdown1.SelectedItem.ToString() == "id_detail")
             {
-                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.compareid), ((CBBitem)bunifuDropdown1.SelectedItem).Value);
+                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.compareid), ((CBBitem)bunifuDropdown1.SelectedItem).Value, bunifuTextBox1.Text);
             }
             if (bunifuDropdown1.SelectedItem.ToString() == "route")
             {
-                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.compareroute), ((CBBitem)bunifuDropdown1.SelectedItem).Value);
+                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.compareroute), ((CBBitem)bunifuDropdown1.SelectedItem).Value, bunifuTextBox1.Text);
             }
             if (bunifuDropdown1.SelectedItem.ToString() == "vehicle")
             {
-                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.comparevehicle), ((CBBitem)bunifuDropdown1.SelectedItem).Value);
+                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.comparevehicle), ((CBBitem)bunifuDropdown1.SelectedItem).Value, bunifuTextBox1.Text);
             }
             if (bunifuDropdown1.SelectedItem.ToString() == "date")
             {
-                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.Comparedate), ((CBBitem)bunifuDropdown1.SelectedItem).Value);
+                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.Comparedate), ((CBBitem)bunifuDropdown1.SelectedItem).Value, bunifuTextBox1.Text);
             }
             if (bunifuDropdown1.SelectedItem.ToString() == "time_start")
             {
-                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.comparetime), ((CBBitem)bunifuDropdown1.SelectedItem).Value);
+                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.comparetime), ((CBBitem)bunifuDropdown1.SelectedItem).Value, bunifuTextBox1.Text);
             }
             if (bunifuDropdown1.SelectedItem.ToString() == "price")
             {
-                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.comparenumber), ((CBBitem)bunifuDropdown1.SelectedItem).Value);
+                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.comparenumber), ((CBBitem)bunifuDropdown1.SelectedItem).Value, bunifuTextBox1.Text);
             }
             if (bunifuDropdown1.SelectedItem.ToString() == "deleted")
             {
-                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.Comparedele), ((CBBitem)bunifuDropdown1.SelectedItem).Value);
+                bunifuDataGridView1.DataSource = BLL_delRoute.Instance.sort(new BLL_delRoute.Compare(DTO_DelRoute.Comparedele), ((CBBitem)bunifuDropdown1.SelectedItem).Value, bunifuTextBox1.Text);
             }
         }
     }

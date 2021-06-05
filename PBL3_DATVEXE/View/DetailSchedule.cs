@@ -16,20 +16,32 @@ namespace PBL3_DATVEXE.View
     public partial class DetailSchedule : Form
     {
         confirm cf = new confirm();
-        public DetailSchedule()
+
+        public string departure { get; set; }
+        public string arrival { get; set; }
+        public DateTime date { get; set; }
+        public DetailSchedule(string departure, string arrival, DateTime date)
         {
             InitializeComponent();
-            showDetailRoute("Quảng Trị","Đà Nẵng", DateTime.Now);
-            List<DetailRoute> list = BLL_TKVX.Instance.getAllChiTietTuyen_BLL();
-            foreach (DetailRoute i in list)
-            {
+            this.departure = departure;
+            this.arrival = arrival;
+            this.date = date;
 
-                //if ((DateTime.Compare(DateTime.Now.Date, i.date) > 0))
-                if ((DateTime.Compare(DateTime.Now.Date, i.date) > 0))// || (DateTime.Compare(Convert.ToDateTime(DateTime.Now.Hour),Convert.ToDateTime(i.time_start)) > 0))
-                {
-                    BLL_TKVX.Instance.updateDetailRoute_BLL(i.id_delRoute);
-                }
+            showDetailRoute(this.departure, this.arrival, this.date);//"Quảng Trị","Đà Nẵng", DateTime.Now
+            if (flowLayoutPanel1 == null)
+            {
+                MessageBox.Show("Khong co tuyen di nao ban can tim");
             }
+            //List<DetailRoute> list = BLL_TKVX.Instance.getAllChiTietTuyen_BLL();
+            //foreach (DetailRoute i in list)
+            //{
+
+            //    //if ((DateTime.Compare(DateTime.Now.Date, i.date) > 0))
+            //    if ((DateTime.Compare(DateTime.Now.Date, i.date) > 0))// || (DateTime.Compare(Convert.ToDateTime(DateTime.Now.Hour),Convert.ToDateTime(i.time_start)) > 0))
+            //    {
+            //        BLL_TKVX.Instance.updateDetailRoute_BLL(i.id_delRoute);
+            //    }
+            //}
         }
 
 
@@ -45,7 +57,7 @@ namespace PBL3_DATVEXE.View
         //}
         //public void ShowXe()
         //{
-           
+
         //    dgw1.DataSource = BLL_TKVX.Instance.getALLDetailSchedule_BLL("QT","DN",DateTime.Now.Date);
         //    dgw1.Columns["id_detRoute"].Visible = false;
         //    dgw1.Columns["id_vehicle"].Visible = false;
@@ -81,12 +93,12 @@ namespace PBL3_DATVEXE.View
         //    return dgw1.SelectedRows[0].Cells["id_vehicle"].Value.ToString();
 
         //}
-        
-        
+
+
         //private void But_chon_Click(object sender, EventArgs e)
         //{
         //    DataGridViewSelectedRowCollection data = dgw1.SelectedRows;
-            
+
         //    //flowLayoutPanel1.Controls.Count
         //    if (data.Count == 1)
         //    {
@@ -120,13 +132,13 @@ namespace PBL3_DATVEXE.View
             //}
         }
 
-        public void showDetailRoute(string departure, string arrival,DateTime date)
+        public void showDetailRoute(string departure, string arrival, DateTime date)
         {
-            List<Detail> listDetail = BLL_TKVX.Instance.getALLDetailSchedule_BLL(departure,arrival,date.Date);
+            List<Detail> listDetail = BLL_TKVX.Instance.getALLDetailSchedule_BLL(departure, arrival, date.Date);
             int count = listDetail.Count;
             seeRoute[] list = new seeRoute[count];
             int count1 = 0;
-            foreach(seeRoute i in list)
+            foreach (seeRoute i in list)
             {
 
                 flowLayoutPanel1.Controls.Add(new seeRoute
@@ -140,9 +152,9 @@ namespace PBL3_DATVEXE.View
                     thoiGian = listDetail[count1].time_start.ToString(),
                     gia = listDetail[count1].price.ToString() + "đ",
                     gheTrong = listDetail[count1].empty_seat.ToString() + " ghế" + " trống"
-                }) ;
+                });
                 count1++;
-            }    
+            }
         }
 
         private void showDatailRoute1(List<Detail> listDetail, string departure, string arrival, DateTime date)
@@ -152,7 +164,7 @@ namespace PBL3_DATVEXE.View
             seeRoute[] list = new seeRoute[listDetail.Count];
             int count1 = 0;
             flowLayoutPanel1.Controls.Clear();
-            
+
             foreach (seeRoute i in list)
             {
 
@@ -185,7 +197,7 @@ namespace PBL3_DATVEXE.View
                 pnGiaThapNhat.BackColor = Color.FromArgb(240, 240, 240);
                 lbGiaCaoNhat.ForeColor = Color.FromArgb(0, 0, 0);
                 pnGiaCaoNhat.BackColor = Color.FromArgb(240, 240, 240);
-                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.CompareTimeIncre), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date);
+                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.CompareTimeIncre), this.departure, this.arrival, this.date), this.departure, this.arrival, this.date);
                 //pnGioSomNhat.BorderStyle = BorderStyle.FixedSingle;
             }
             else if (pnGioMuonNhat.Controls.Contains(lb))
@@ -198,7 +210,7 @@ namespace PBL3_DATVEXE.View
                 pnGiaThapNhat.BackColor = Color.FromArgb(240, 240, 240);
                 lbGiaCaoNhat.ForeColor = Color.FromArgb(0, 0, 0);
                 pnGiaCaoNhat.BackColor = Color.FromArgb(240, 240, 240);
-                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.CompareTimeDecre), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date);
+                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.CompareTimeDecre), this.departure, this.arrival, this.date), this.departure, this.arrival, this.date);
                 // pnGioMuonNhat.BorderStyle = BorderStyle.FixedSingle;
             }
             else if (pnGiaThapNhat.Controls.Contains(lb))
@@ -211,7 +223,7 @@ namespace PBL3_DATVEXE.View
                 pnGioSomNhat.BackColor = Color.FromArgb(240, 240, 240);
                 lbGiaCaoNhat.ForeColor = Color.FromArgb(0, 0, 0);
                 pnGiaCaoNhat.BackColor = Color.FromArgb(240, 240, 240);
-                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.ComparePriceIncre), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date);
+                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.ComparePriceIncre), this.departure, this.arrival, this.date), this.departure, this.arrival, this.date);
                 // pnGiaThapNhat.BorderStyle = BorderStyle.FixedSingle;
             }
             else
@@ -224,7 +236,7 @@ namespace PBL3_DATVEXE.View
                 pnGiaThapNhat.BackColor = Color.FromArgb(240, 240, 240);
                 lbGioSomNhat.ForeColor = Color.FromArgb(0, 0, 0);
                 pnGioSomNhat.BackColor = Color.FromArgb(240, 240, 240);
-                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.ComparePriceDecre), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date);
+                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.ComparePriceDecre), this.departure, this.arrival, this.date), this.departure, this.arrival, this.date);
                 // pnGiaCaoNhat.BorderStyle = BorderStyle.FixedSingle;
             }
 
@@ -244,7 +256,7 @@ namespace PBL3_DATVEXE.View
                 pnGiaThapNhat.BackColor = Color.FromArgb(240, 240, 240);
                 lbGiaCaoNhat.ForeColor = Color.FromArgb(0, 0, 0);
                 pnGiaCaoNhat.BackColor = Color.FromArgb(240, 240, 240);
-                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.CompareTimeIncre), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date);
+                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.CompareTimeIncre), this.departure, this.arrival, this.date), this.departure, this.arrival, this.date);
                 //pnGioSomNhat.BorderStyle = BorderStyle.FixedSingle;
             }
             else if (pn.Controls.Contains(lbGioMuonNhat))
@@ -257,7 +269,7 @@ namespace PBL3_DATVEXE.View
                 pnGiaThapNhat.BackColor = Color.FromArgb(240, 240, 240);
                 lbGiaCaoNhat.ForeColor = Color.FromArgb(0, 0, 0);
                 pnGiaCaoNhat.BackColor = Color.FromArgb(240, 240, 240);
-                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.CompareTimeDecre), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date);
+                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.CompareTimeDecre), this.departure, this.arrival, this.date), this.departure, this.arrival, this.date);
                 // pnGioMuonNhat.BorderStyle = BorderStyle.FixedSingle;
             }
             else if (pn.Controls.Contains(lbGiaThapNhat))
@@ -270,7 +282,7 @@ namespace PBL3_DATVEXE.View
                 pnGioSomNhat.BackColor = Color.FromArgb(240, 240, 240);
                 lbGiaCaoNhat.ForeColor = Color.FromArgb(0, 0, 0);
                 pnGiaCaoNhat.BackColor = Color.FromArgb(240, 240, 240);
-                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.ComparePriceIncre), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date);
+                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.ComparePriceIncre), this.departure, this.arrival, this.date), this.departure, this.arrival, this.date);
                 // pnGiaThapNhat.BorderStyle = BorderStyle.FixedSingle;
             }
             else
@@ -283,7 +295,7 @@ namespace PBL3_DATVEXE.View
                 pnGiaThapNhat.BackColor = Color.FromArgb(240, 240, 240);
                 lbGioSomNhat.ForeColor = Color.FromArgb(0, 0, 0);
                 pnGioSomNhat.BackColor = Color.FromArgb(240, 240, 240);
-                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.ComparePriceDecre), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date), "Quảng Trị", "Đà Nẵng", DateTime.Now.Date);
+                showDatailRoute1(BLL_TKVX.Instance.Sort_BLL(new DAL_TKVX.myDel(Detail.ComparePriceDecre), this.departure, this.arrival, this.date), this.departure, this.arrival, this.date);
                 // pnGiaCaoNhat.BorderStyle = BorderStyle.FixedSingle;
             }
         }

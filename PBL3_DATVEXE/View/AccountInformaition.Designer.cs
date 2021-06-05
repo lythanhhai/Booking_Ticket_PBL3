@@ -73,14 +73,15 @@ namespace PBL3_DATVEXE.View
             this.bunifuRadioButton1.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.bunifuRadioButton1.BorderThickness = 1;
             this.bunifuRadioButton1.Checked = true;
-            this.bunifuRadioButton1.Location = new System.Drawing.Point(8, 210);
+            this.bunifuRadioButton1.Location = new System.Drawing.Point(9, 262);
+            this.bunifuRadioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuRadioButton1.Name = "bunifuRadioButton1";
             this.bunifuRadioButton1.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.bunifuRadioButton1.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.bunifuRadioButton1.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.bunifuRadioButton1.RadioColor = System.Drawing.Color.DodgerBlue;
             this.bunifuRadioButton1.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuRadioButton1.Size = new System.Drawing.Size(21, 21);
+            this.bunifuRadioButton1.Size = new System.Drawing.Size(24, 24);
             this.bunifuRadioButton1.TabIndex = 1;
             this.bunifuRadioButton1.Text = null;
             this.bunifuRadioButton1.CheckedChanged2 += new System.EventHandler<Bunifu.UI.WinForms.BunifuRadioButton.CheckedChangedEventArgs>(this.bunifuRadioButton1_CheckedChanged2);
@@ -92,14 +93,15 @@ namespace PBL3_DATVEXE.View
             this.bunifuRadioButton2.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.bunifuRadioButton2.BorderThickness = 1;
             this.bunifuRadioButton2.Checked = false;
-            this.bunifuRadioButton2.Location = new System.Drawing.Point(135, 210);
+            this.bunifuRadioButton2.Location = new System.Drawing.Point(152, 262);
+            this.bunifuRadioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuRadioButton2.Name = "bunifuRadioButton2";
             this.bunifuRadioButton2.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.bunifuRadioButton2.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.bunifuRadioButton2.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.bunifuRadioButton2.RadioColor = System.Drawing.Color.DodgerBlue;
             this.bunifuRadioButton2.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuRadioButton2.Size = new System.Drawing.Size(21, 21);
+            this.bunifuRadioButton2.Size = new System.Drawing.Size(24, 24);
             this.bunifuRadioButton2.TabIndex = 2;
             this.bunifuRadioButton2.Text = null;
             // 
@@ -116,9 +118,11 @@ namespace PBL3_DATVEXE.View
             this.bunifuGroupBox1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox1.LabelIndent = 10;
             this.bunifuGroupBox1.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox1.Location = new System.Drawing.Point(54, 135);
+            this.bunifuGroupBox1.Location = new System.Drawing.Point(61, 169);
+            this.bunifuGroupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuGroupBox1.Name = "bunifuGroupBox1";
-            this.bunifuGroupBox1.Size = new System.Drawing.Size(279, 297);
+            this.bunifuGroupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bunifuGroupBox1.Size = new System.Drawing.Size(314, 371);
             this.bunifuGroupBox1.TabIndex = 4;
             this.bunifuGroupBox1.TabStop = false;
             // 
@@ -127,9 +131,9 @@ namespace PBL3_DATVEXE.View
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(66, 102);
+            this.label2.Location = new System.Drawing.Point(74, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 28);
+            this.label2.Size = new System.Drawing.Size(120, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Vé của tôi";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -140,9 +144,9 @@ namespace PBL3_DATVEXE.View
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(66, 23);
+            this.label1.Location = new System.Drawing.Point(74, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 28);
+            this.label1.Size = new System.Drawing.Size(225, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thông tin tài khoản";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -150,9 +154,10 @@ namespace PBL3_DATVEXE.View
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PBL3_DATVEXE.Properties.Resources.tickets;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 88);
+            this.pictureBox2.Location = new System.Drawing.Point(7, 110);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(54, 55);
+            this.pictureBox2.Size = new System.Drawing.Size(61, 69);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -160,9 +165,10 @@ namespace PBL3_DATVEXE.View
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PBL3_DATVEXE.Properties.Resources.user__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(54, 55);
+            this.pictureBox1.Size = new System.Drawing.Size(61, 69);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -177,26 +183,27 @@ namespace PBL3_DATVEXE.View
             this.panel1.Controls.Add(this.txtBHovaten);
             this.panel1.Controls.Add(this.bunifuRadioButton2);
             this.panel1.Controls.Add(this.bunifuRadioButton1);
-            this.panel1.Location = new System.Drawing.Point(464, 135);
+            this.panel1.Location = new System.Drawing.Point(522, 169);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(274, 297);
+            this.panel1.Size = new System.Drawing.Size(308, 371);
             this.panel1.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(175, 210);
+            this.label4.Location = new System.Drawing.Point(197, 262);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 17);
+            this.label4.Size = new System.Drawing.Size(29, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nữ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 210);
+            this.label3.Location = new System.Drawing.Point(40, 262);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 17);
+            this.label3.Size = new System.Drawing.Size(42, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Nam";
             // 
@@ -227,7 +234,8 @@ namespace PBL3_DATVEXE.View
             this.txtBAdress.IconRight = null;
             this.txtBAdress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBAdress.Lines = new string[0];
-            this.txtBAdress.Location = new System.Drawing.Point(3, 147);
+            this.txtBAdress.Location = new System.Drawing.Point(3, 184);
+            this.txtBAdress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBAdress.MaxLength = 32767;
             this.txtBAdress.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBAdress.Modified = false;
@@ -253,7 +261,7 @@ namespace PBL3_DATVEXE.View
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBAdress.OnIdleState = stateProperties4;
-            this.txtBAdress.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBAdress.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBAdress.PasswordChar = '\0';
             this.txtBAdress.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBAdress.PlaceholderText = "Địa chỉ";
@@ -263,7 +271,7 @@ namespace PBL3_DATVEXE.View
             this.txtBAdress.SelectionLength = 0;
             this.txtBAdress.SelectionStart = 0;
             this.txtBAdress.ShortcutsEnabled = true;
-            this.txtBAdress.Size = new System.Drawing.Size(260, 41);
+            this.txtBAdress.Size = new System.Drawing.Size(292, 51);
             this.txtBAdress.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBAdress.TabIndex = 0;
             this.txtBAdress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -301,7 +309,8 @@ namespace PBL3_DATVEXE.View
             this.txtBSDT.IconRight = null;
             this.txtBSDT.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBSDT.Lines = new string[0];
-            this.txtBSDT.Location = new System.Drawing.Point(3, 76);
+            this.txtBSDT.Location = new System.Drawing.Point(3, 95);
+            this.txtBSDT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBSDT.MaxLength = 32767;
             this.txtBSDT.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBSDT.Modified = false;
@@ -327,7 +336,7 @@ namespace PBL3_DATVEXE.View
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBSDT.OnIdleState = stateProperties8;
-            this.txtBSDT.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBSDT.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBSDT.PasswordChar = '\0';
             this.txtBSDT.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBSDT.PlaceholderText = "Số điện thoại";
@@ -337,7 +346,7 @@ namespace PBL3_DATVEXE.View
             this.txtBSDT.SelectionLength = 0;
             this.txtBSDT.SelectionStart = 0;
             this.txtBSDT.ShortcutsEnabled = true;
-            this.txtBSDT.Size = new System.Drawing.Size(260, 41);
+            this.txtBSDT.Size = new System.Drawing.Size(292, 51);
             this.txtBSDT.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBSDT.TabIndex = 0;
             this.txtBSDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -375,7 +384,8 @@ namespace PBL3_DATVEXE.View
             this.txtBemail.IconRight = null;
             this.txtBemail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBemail.Lines = new string[0];
-            this.txtBemail.Location = new System.Drawing.Point(3, 250);
+            this.txtBemail.Location = new System.Drawing.Point(3, 312);
+            this.txtBemail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBemail.MaxLength = 32767;
             this.txtBemail.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBemail.Modified = false;
@@ -401,7 +411,7 @@ namespace PBL3_DATVEXE.View
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBemail.OnIdleState = stateProperties12;
-            this.txtBemail.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBemail.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBemail.PasswordChar = '\0';
             this.txtBemail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBemail.PlaceholderText = "Email";
@@ -411,7 +421,7 @@ namespace PBL3_DATVEXE.View
             this.txtBemail.SelectionLength = 0;
             this.txtBemail.SelectionStart = 0;
             this.txtBemail.ShortcutsEnabled = true;
-            this.txtBemail.Size = new System.Drawing.Size(260, 41);
+            this.txtBemail.Size = new System.Drawing.Size(292, 51);
             this.txtBemail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBemail.TabIndex = 0;
             this.txtBemail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -449,7 +459,8 @@ namespace PBL3_DATVEXE.View
             this.txtBHovaten.IconRight = null;
             this.txtBHovaten.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBHovaten.Lines = new string[0];
-            this.txtBHovaten.Location = new System.Drawing.Point(3, 3);
+            this.txtBHovaten.Location = new System.Drawing.Point(3, 4);
+            this.txtBHovaten.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBHovaten.MaxLength = 32767;
             this.txtBHovaten.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtBHovaten.Modified = false;
@@ -475,7 +486,7 @@ namespace PBL3_DATVEXE.View
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtBHovaten.OnIdleState = stateProperties16;
-            this.txtBHovaten.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBHovaten.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBHovaten.PasswordChar = '\0';
             this.txtBHovaten.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtBHovaten.PlaceholderText = "Họ và tên";
@@ -485,7 +496,7 @@ namespace PBL3_DATVEXE.View
             this.txtBHovaten.SelectionLength = 0;
             this.txtBHovaten.SelectionStart = 0;
             this.txtBHovaten.ShortcutsEnabled = true;
-            this.txtBHovaten.Size = new System.Drawing.Size(260, 41);
+            this.txtBHovaten.Size = new System.Drawing.Size(292, 51);
             this.txtBHovaten.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtBHovaten.TabIndex = 0;
             this.txtBHovaten.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -498,13 +509,14 @@ namespace PBL3_DATVEXE.View
             // 
             // AccountInformaition
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuGroupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AccountInformaition";
-            this.Size = new System.Drawing.Size(997, 609);
+            this.Size = new System.Drawing.Size(1122, 761);
             this.bunifuGroupBox1.ResumeLayout(false);
             this.bunifuGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

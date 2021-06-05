@@ -67,34 +67,34 @@ namespace PBL3_DATVEXE.View
             panel1.Visible = false;
             label1.ForeColor = Color.Black;
             label2.ForeColor = Color.DodgerBlue;
-            ListTicket = new DataTable();
-            ListTicket.Columns.Add("Mã thanh toán", typeof(string));
-            ListTicket.Columns.Add("Số vé", typeof(int));
-            ListTicket.Columns.Add("Tổng", typeof(float));
-            ListTicket.Columns.Add("Ngày", typeof(DateTime));
-            foreach(Order i in BLL_Order.Instance.GetHistory("11"))//IdUser
-            {
-                DataRow dr = ListTicket.NewRow();
-                dr["Mã thanh toán"] = i.id_order;
-                dr["Số vé"] = i.numberTicket;
-                dr["Tổng"] = i.total_price;
-                dr["Ngày"] = i.date_order;
-                ListTicket.Rows.Add(dr);
-            }
-            panelll = new Panel();
-            panelll.Location = new System.Drawing.Point(250, 105);
-            panelll.Name = "";
-            panelll.Size = new System.Drawing.Size(500, 297);
-            panelll.BackColor = Color.White;
-            panelll.BorderStyle = BorderStyle.None;
+            //ListTicket = new DataTable();
+            //ListTicket.Columns.Add("Mã thanh toán", typeof(string));
+            //ListTicket.Columns.Add("Số vé", typeof(int));
+            //ListTicket.Columns.Add("Tổng", typeof(float));
+            //ListTicket.Columns.Add("Ngày", typeof(DateTime));
+            //foreach(Order i in BLL_Order.Instance.GetHistory("11"))//IdUser
+            //{
+            //    DataRow dr = ListTicket.NewRow();
+            //    dr["Mã thanh toán"] = i.id_order;
+            //    dr["Số vé"] = i.numberTicket;
+            //    dr["Tổng"] = i.total_price;
+            //    dr["Ngày"] = i.date_order;
+            //    ListTicket.Rows.Add(dr);
+            //}
+            //panelll = new Panel();
+            //panelll.Location = new System.Drawing.Point(250, 105);
+            //panelll.Name = "";
+            //panelll.Size = new System.Drawing.Size(500, 297);
+            //panelll.BackColor = Color.White;
+            //panelll.BorderStyle = BorderStyle.None;
 
-            dataGridVieww = new BunifuDataGridView();
-            dataGridVieww.Location = new Point(3, 3);
-            dataGridVieww.Size = new Size(500, 297);
-            dataGridVieww.BackgroundColor = Color.White;
-            dataGridVieww.DataSource = ListTicket;
-            panelll.Controls.Add(dataGridVieww);
-            Controls.Add(panelll);
+            //dataGridVieww = new BunifuDataGridView();
+            //dataGridVieww.Location = new Point(3, 3);
+            //dataGridVieww.Size = new Size(500, 297);
+            //dataGridVieww.BackgroundColor = Color.White;
+            //dataGridVieww.DataSource = ListTicket;
+            //panelll.Controls.Add(dataGridVieww);
+            //Controls.Add(panelll);
             
         }
 

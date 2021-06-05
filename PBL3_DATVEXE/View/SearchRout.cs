@@ -14,9 +14,15 @@ namespace PBL3_DATVEXE.View
     public partial class SearchRout : UserControl
     {
         private string convert;
+        private string depature { get; set; }
+
+        public string arrival { get; set; }
+
+        public DateTime date { get; set; }
         public SearchRout()
         {
             InitializeComponent();
+            
         }
         public void Reset()
         {
@@ -57,7 +63,7 @@ namespace PBL3_DATVEXE.View
 
         private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
         {
-            panel2.Visible = true;
+            panel2.Visible = false;
             panel1.Visible = false;
         }
 
@@ -66,7 +72,6 @@ namespace PBL3_DATVEXE.View
 
             panel1.Visible = false;
             panel2.Visible = false;
-
             bunifuDatePicker1.Visible = true;
             
         }
@@ -74,7 +79,7 @@ namespace PBL3_DATVEXE.View
         private void bunifuDatePicker1_ValueChanged(object sender, EventArgs e)
         {
             Reset();
-            txtCalendar.Text = bunifuDatePicker1.Value.ToString();
+            txtCalendar.Text = bunifuDatePicker1.Value.ToString().Split(' ')[0];
         }
 
       
@@ -102,7 +107,22 @@ namespace PBL3_DATVEXE.View
                 EndPoint = txtKt.Text,
                 StartTime = bunifuDatePicker1.Value
             };
+            
             return Obj;
+        }
+
+        // chuyển dữ liệu từ search route sang detail
+
+        private void but_timChuyen_Click(object sender, EventArgs e)
+        {
+            
+            
+            DetailSchedule ds = new DetailSchedule(txtBd.Text,txtKt.Text,Convert.ToDateTime(bunifuDatePicker1.Value.ToString()).Date);
+            //MessageBox.Show(txtBd.Text);
+            //MessageBox.Show(txtKt.Text);
+            //MessageBox.Show(Convert.ToDateTime(bunifuDatePicker1.Value.ToString()).Date.ToString());
+            ds.Show();
+
         }
     }
 }

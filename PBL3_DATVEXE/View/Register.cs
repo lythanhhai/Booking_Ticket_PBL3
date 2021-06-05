@@ -173,7 +173,7 @@ namespace PBL3_DATVEXE.View
         {
             int count = 0;
             string id_login = "";
-            DetailSchedule ds = new DetailSchedule();
+            AffterLogin aflogin = new AffterLogin();
             foreach (Login i in BLL_TKVX.Instance.getAllLogin_BLL())
             {
                 if (txtUser.Text == i.userName && txtPass.Text == i.passWord)
@@ -186,13 +186,14 @@ namespace PBL3_DATVEXE.View
             }
             if (count > 0)
             {
-                
-                ds.Show();
+
+                //ds.Show();
+                aflogin.Show();
                 Properties.Settings.Default.id_login = id_login;
                 Properties.Settings.Default.Save();
                 Properties.Settings.Default.Reload();
                 //this.Close();
-                this.Hide();
+                //this.Hide();
             }
 
             else

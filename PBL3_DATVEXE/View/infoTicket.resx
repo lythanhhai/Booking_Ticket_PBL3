@@ -120,18 +120,18 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuPanel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAYgAAAAICAYAAADjhGhKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABgSURBVGhD7dexCYBADIbRKx3D0tJRHMHSMdxck8KDgwMH
-        yPvgdel/0iRJ+msNNwClbWFoDw8AhCP0cjVmRwDUk5vQMxAAfIaByHdidgRAPVcYOkOuBgB15TgsQZKk
-        Wa29/MCQqjM17E4AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAbkAAAAKCAYAAAApfSBHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABsSURBVHhe7dmxDYAwDEXBlIxBSckojEDJGGwOdoMUKQvE
+        3JOuc/8LN0mS/tAabgCY3Ba69vAAQBFH+MrlGx0BwIxy176MHACVGDkAyjJyAJTVjVw+6EZHADCjK3Sd
+        IZcPAGaWA7cESZKq1toLQH3tuDjKGvgAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="bunifuPanel5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAXcAAAAICAYAAAACw79eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABvSURBVGhD7dixDcMwDEVBlRkjZcqM4hFSegxNLoWOWDgj
-        ULgDHgRwgF+oAbCxOecz6pKksr1y0pc4vCMA6jty2n/jfi0+APX1nHbjDrCRv3E/1g2AysYYZ077ErdP
-        dP+YlyQV6hr2eB856wDspbUvnRVUPZiO2fYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAaYAAAAKCAYAAAD/2PoiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAB5SURBVHhe7dexDcMwDEVBlR4jZUqP4hFSZgxPLoWK2GSB
+        iMUd8CCAC3yoAUBJY4xHdEuStKFnztEShzMCgJ2unKXvMM21AoCd7pwlwwRACYYJgFIMEwCl/AzTtW4A
+        sEfv/Z2ztMTtFc2fkyRJf22OUrxHThIAVNHaB6JRmxbjFTjaAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

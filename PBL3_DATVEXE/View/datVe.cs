@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace PBL3_DATVEXE.View
 {
     public partial class datVe : Form
-    {
+    {   
         // delegate lấy số vé và tổng giá
         public delegate void getVeAndTongGia(int soVe,double tongGia);
 
@@ -101,7 +101,8 @@ namespace PBL3_DATVEXE.View
                 {
                     BLL_TKVX.Instance.updateOrderSeat_BLL(listOrderSeat[i], id_order);
                 }
-                MessageBox.Show("ok");
+                Payment payment = new Payment( Properties.Settings.Default.id_login,id_person,id_order);
+                payment.Show();
             }
             else
             {
