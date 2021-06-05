@@ -86,6 +86,10 @@ namespace PBL3_DATVEXE
                 f.d += new Add_detail.Mydel(Show1);
                 f.Show();
             }
+            else
+            {
+                MessageBox.Show("ban chua chon gia tri can edit");
+            }
         }
 
         private void bunifuButton5_Click_1(object sender, EventArgs e)

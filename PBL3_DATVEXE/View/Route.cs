@@ -62,34 +62,79 @@ namespace PBL3_DATVEXE
         private void bunifuButton3_Click_1(object sender, EventArgs e)
         {
             DTO_route r = new DTO_route();
-            r.id_route = bunifuTextBox1.Text;
-            r.departure = bunifuTextBox2.Text;
-            r.arrival = bunifuTextBox3.Text;
-            r.deleted = false;
-            BLL_Route.Instance.add_route(r);
-            load();
+            if (bunifuTextBox1.Text == "" || bunifuTextBox2.Text == "" || bunifuTextBox3.Text == "")
+            {
+                MessageBox.Show(" thông tin không đầy đủ");
+            }
+            else
+            {
+                r.id_route = bunifuTextBox1.Text;
+                r.departure = bunifuTextBox2.Text;
+                r.arrival = bunifuTextBox3.Text;
+                r.deleted = false;
+                try
+                {
+
+
+                    BLL_Route.Instance.add_route(r);
+                    load();
+                }
+                catch(Exception l)
+                {
+                    MessageBox.Show(" không thanh công");
+                }
+            }
         }
 
         private void bunifuButton4_Click_1(object sender, EventArgs e)
         {
             DTO_route r = new DTO_route();
-            r.id_route = bunifuTextBox1.Text;
-            r.departure = bunifuTextBox2.Text;
-            r.arrival = bunifuTextBox3.Text;
-            r.deleted = false;
-            BLL_Route.Instance.edit(r);
-            load();
+            if (bunifuTextBox1.Text == "" || bunifuTextBox2.Text == "" || bunifuTextBox3.Text == ""|| bunifuDataGridView1.SelectedRows.Count != 1)
+            {
+                MessageBox.Show(" thông tin không chính xác");
+            }
+            else
+            {
+                r.id_route = bunifuTextBox1.Text;
+                r.departure = bunifuTextBox2.Text;
+                r.arrival = bunifuTextBox3.Text;
+                r.deleted = false;
+                try
+                {
+
+                    BLL_Route.Instance.edit(r);
+                load();
+                }
+                catch (Exception l)
+                {
+                    MessageBox.Show(" không thanh công");
+                }
+            }
         }
 
         private void bunifuButton5_Click_1(object sender, EventArgs e)
         {
             DTO_route r = new DTO_route();
-            r.id_route = bunifuTextBox1.Text;
-            r.departure = bunifuTextBox2.Text;
-            r.arrival = bunifuTextBox3.Text;
-            r.deleted = false;
-            BLL_Route.Instance.deleteRoute(r.id_route);
-            load();
+            if (bunifuTextBox1.Text == "" || bunifuTextBox2.Text == "" || bunifuTextBox3.Text == ""|| bunifuDataGridView1.SelectedRows.Count != 1)
+            {
+                MessageBox.Show(" thông tin không chính xác");
+            }
+            else
+            {
+                r.id_route = bunifuTextBox1.Text;
+                r.departure = bunifuTextBox2.Text;
+                r.arrival = bunifuTextBox3.Text;
+                r.deleted = false;
+                try
+                {
+                    BLL_Route.Instance.deleteRoute(r.id_route);
+                load();
+                }
+                catch (Exception l)
+                {
+                    MessageBox.Show(" không thanh công");
+                }
+            }
         }
 
         private void bunifuButton2_Click_1(object sender, EventArgs e)

@@ -76,16 +76,52 @@ namespace PBL3_DATVEXE
 
         private void bunifuButton1_Click_1(object sender, EventArgs e)
         {
+            int i = 0;
             DTO_delRoute_xl s = new DTO_delRoute_xl();
             s.id_delroute = bunifuTextBox1.Text;
-            s.id_route = ((CBBitem)bunifuDropdown1.SelectedItem).Value;
-            s.id_vehicle = ((CBBitem)bunifuDropdown2.SelectedItem).Value;
-            s.time_start = Convert.ToDateTime(bunifuTextBox2.Text);
-            s.price = Convert.ToDouble(bunifuTextBox3.Text);
-            s.date = bunifuDatePicker1.Value;
-            BLL_delRoute.Instance.execute(s);
+            if (bunifuDropdown1.Text == "Route" && bunifuDropdown2.Text == "Vehicle")
+            {
+                MessageBox.Show("bạn chua chon truong thich hop");
+                i++;
+            }
+            else
+            {
+                s.id_route = ((CBBitem)bunifuDropdown1.SelectedItem).Value;
+                s.id_vehicle = ((CBBitem)bunifuDropdown2.SelectedItem).Value;
+            }
+           
+            try
+            {
+                s.time_start = Convert.ToDateTime(bunifuTextBox2.Text);
+            }
+            catch (Exception loi1)
+            {
+                MessageBox.Show("gia tri thời gian không hơp le");
+                i++;
+            } 
+            try
+            {
+                s.price = Convert.ToDouble(bunifuTextBox3.Text);
+            }
+            catch (Exception loi)
+            {
+                MessageBox.Show("gia tri không hop le");
+                i++;
+            } 
+              s.date = bunifuDatePicker1.Value;
+            if (i == 0)
+            {
+                BLL_delRoute.Instance.execute(s);
+                d(((CBBitem)bunifuDropdown1.SelectedItem).Value, "");
+            }
+           
+           
+            
+        }
 
-            d(((CBBitem)bunifuDropdown1.SelectedItem).Value, "");
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

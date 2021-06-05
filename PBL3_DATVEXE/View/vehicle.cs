@@ -55,36 +55,79 @@ namespace PBL3_DATVEXE.View
 
         private void bunifuButton3_Click_1(object sender, EventArgs e)
         {
-            DTO_vehicle r = new DTO_vehicle();
-            r.id_vehicle = bunifuTextBox1.Text;
-            r.type = bunifuTextBox2.Text;
-            r.name = bunifuTextBox3.Text;
-            r.number_seat = Convert.ToInt32(bunifuTextBox4.Text);
-            BLL_vehicle.Instance.add_vehicle(r);
-            load();
+            if (bunifuTextBox1.Text == "" || bunifuTextBox2.Text == "" || bunifuTextBox3.Text == "" || bunifuTextBox4.Text == "")
+            {
+                MessageBox.Show(" thông tin không đầy đủ");
+            }
+            else
+            {
+                DTO_vehicle r = new DTO_vehicle();
+                r.id_vehicle = bunifuTextBox1.Text;
+                r.type = bunifuTextBox2.Text;
+                r.name = bunifuTextBox3.Text;
+                r.number_seat = Convert.ToInt32(bunifuTextBox4.Text);
+                try
+                {
+                    BLL_vehicle.Instance.add_vehicle(r);
+                load();
+                }
+                catch (Exception l)
+                {
+                    MessageBox.Show(" không thanh công");
+                }
+            }
         }
 
         private void bunifuButton4_Click_1(object sender, EventArgs e)
         {
             DTO_vehicle r = new DTO_vehicle();
-            r.id_vehicle = bunifuTextBox1.Text;
-            r.type = bunifuTextBox2.Text;
-            r.name = bunifuTextBox3.Text;
-            r.number_seat = Convert.ToInt32(bunifuTextBox4.Text);
-            BLL_vehicle.Instance.edit(r);
+            if (bunifuTextBox1.Text == "" || bunifuTextBox2.Text == "" || bunifuTextBox3.Text == "" || bunifuTextBox4.Text == "" || bunifuDataGridView1.SelectedRows.Count != 1)
+            {
+                MessageBox.Show(" thông tin không chính xác");
+            }
+            else
+            {
+                r.id_vehicle = bunifuTextBox1.Text;
+                r.type = bunifuTextBox2.Text;
+                r.name = bunifuTextBox3.Text;
+                
+                r.number_seat = Convert.ToInt32(bunifuTextBox4.Text);
+            }
+            try
+            {
+                BLL_vehicle.Instance.edit(r);
             load();
-
         }
+                catch(Exception l)
+                {
+                    MessageBox.Show(" không thanh công");
+                }
+
+}
 
         private void bunifuButton5_Click_1(object sender, EventArgs e)
         {
             DTO_vehicle r = new DTO_vehicle();
-            r.id_vehicle = bunifuTextBox1.Text;
-            r.type = bunifuTextBox2.Text;
-            r.name = bunifuTextBox3.Text;
-            r.number_seat = Convert.ToInt32(bunifuTextBox4.Text);
-            BLL_vehicle.Instance.deletevehicle(r.id_vehicle);
+            if (bunifuTextBox1.Text == "" || bunifuTextBox2.Text == "" || bunifuTextBox3.Text == "" || bunifuTextBox4.Text == "" || bunifuDataGridView1.SelectedRows.Count != 1)
+            {
+                MessageBox.Show(" thông tin không chính xác");
+            }
+            else
+            {
+                r.id_vehicle = bunifuTextBox1.Text;
+                r.type = bunifuTextBox2.Text;
+                r.name = bunifuTextBox3.Text;
+                r.number_seat = Convert.ToInt32(bunifuTextBox4.Text);
+            }
+            try
+            {
+                BLL_vehicle.Instance.deletevehicle(r.id_vehicle);
             load();
+}
+                catch (Exception l)
+{
+    MessageBox.Show(" không thanh công");
+}
         }
 
         private void bunifuButton2_Click_1(object sender, EventArgs e)
