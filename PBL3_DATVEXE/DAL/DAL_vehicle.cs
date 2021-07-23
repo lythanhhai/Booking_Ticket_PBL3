@@ -32,6 +32,7 @@ namespace PBL3_DATVEXE.DAL
 
             List<DTO_vehicle> data = new List<DTO_vehicle>();
             string q = "select * from Vehicle";
+            
             foreach (DataRow i in DB_H.Instance.get(q).Rows)
             {
                 data.Add(getvehicle(i));

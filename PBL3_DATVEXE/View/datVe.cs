@@ -106,8 +106,11 @@ namespace PBL3_DATVEXE.View
             }
             else
             {
-                MessageBox.Show("Ban chua chon ghe");
+                MessageBox.Show("loi");
             }
+            MessageBox.Show(listGheDaChon.Count.ToString());
+            MessageBox.Show(listId_seat.Count.ToString());
+            MessageBox.Show(listOrderSeat.Count.ToString());
         }
 
         private void txtName_Click(object sender, EventArgs e)
@@ -195,7 +198,7 @@ namespace PBL3_DATVEXE.View
         {
             // showNameSeat();
             panelMain.Hide();
-            OpenChildForm(new infoTicket(this.id_detRoute,this.id_vehicle,this.tongGia));
+          //  OpenChildForm(new infoTicket(this.id_detRoute,this.id_vehicle,this.tongGia));
         }
         private Form currentChildForm;
         private void OpenChildForm(Form childForm)

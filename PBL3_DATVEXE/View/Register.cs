@@ -208,6 +208,16 @@ namespace PBL3_DATVEXE.View
             {
                 lbErrorPassSignIn.Text = "Username or Password is incorrect";
             }
+            List<DetailRoute> list = BLL_TKVX.Instance.getAllChiTietTuyen_BLL();
+            foreach (DetailRoute i in list)
+            {
+
+                //if ((DateTime.Compare(DateTime.Now.Date, i.date) > 0))
+                if ((DateTime.Compare(DateTime.Now.Date, i.date) > 0))// || (DateTime.Compare(Convert.ToDateTime(DateTime.Now.Hour),Convert.ToDateTime(i.time_start)) > 0))
+                {
+                    BLL_TKVX.Instance.updateDetailRoute_BLL(i.id_delRoute);
+                }
+            }
 
         }
 

@@ -29,18 +29,23 @@ namespace PBL3_DATVEXE.DAL
 
             }
         }
+        DataTable datadung = DB_H.Instance.get(" select * from orderSeat");
+        DataTable datadung1 = DB_H.Instance.get(" select * from DetailRoute");
+      
+
+
         public string doi_date(string id_order)
         {
             string a = "";
             string id_det = "";
-            string query = "select * from orderSeat";
-            string query1 = "select * from DetailRoute";
-            foreach (DataRow i in DB_H.Instance.get(query).Rows)
+            //string query = "select * from orderSeat";
+            //string query1 = "select * from DetailRoute";
+            foreach (DataRow i in datadung.Rows)
             {
                 if (i["id_order"].ToString() == id_order)
                 {
                     id_det = i["id_detRoute"].ToString();
-                    foreach (DataRow r in DB_H.Instance.get(query1).Rows)
+                    foreach (DataRow r in datadung1.Rows)
                     {
                         if (id_det == r["id_detRoute"].ToString())
                         {
@@ -94,9 +99,9 @@ namespace PBL3_DATVEXE.DAL
         {
             string a = "";
             string id_seat = "";
-            string query = "select * from orderSeat";
+           // string query = "select * from orderSeat";
             string query1 = "select * from Seat";
-            foreach (DataRow i in DB_H.Instance.get(query).Rows)
+            foreach (DataRow i in datadung.Rows)
             {
                 if (i["id_order"].ToString() == id_order)
                 {
@@ -121,15 +126,15 @@ namespace PBL3_DATVEXE.DAL
             string a = "";
             string id_det = "";
             string id_vehicle = "";
-            string query = "select * from orderSeat";
-            string query1 = "select * from DetailRoute";
+            //string query = "select * from orderSeat";
+           // string query1 = "select * from DetailRoute";
             string q = "select * from Vehicle";
-            foreach (DataRow i in DB_H.Instance.get(query).Rows)
+            foreach (DataRow i in datadung.Rows)
             {
                 if (i["id_order"].ToString() == id_order)
                 {
                     id_det = i["id_detRoute"].ToString();
-                    foreach (DataRow r in DB_H.Instance.get(query1).Rows)
+                    foreach (DataRow r in datadung1.Rows)
                     {
                         if (id_det == r["id_detRoute"].ToString())
                         {
@@ -150,15 +155,15 @@ namespace PBL3_DATVEXE.DAL
             string a = "";
             string id_det = "";
             string id_route = "";
-            string query = "select * from orderSeat";
-            string query1 = "select * from DetailRoute";
+            //string query = "select * from orderSeat";
+           // string query1 = "select * from DetailRoute";
             string q = "select * from Route";
-            foreach (DataRow i in DB_H.Instance.get(query).Rows)
+            foreach (DataRow i in datadung.Rows)
             {
                 if (i["id_order"].ToString() == id_order)
                 {
                     id_det = i["id_detRoute"].ToString();
-                    foreach (DataRow r in DB_H.Instance.get(query1).Rows)
+                    foreach (DataRow r in datadung1.Rows)
                     {
                         if (id_det == r["id_detRoute"].ToString())
                         {

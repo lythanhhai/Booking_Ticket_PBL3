@@ -20,6 +20,7 @@ namespace PBL3_DATVEXE.DTO
         public string vehicle { get; set; }// name_vehicle
         public string order_seat { get; set; }// name_seat// liet ke tat ca neu dat nhieu hon 1 ve
         public string route { get; set; }// name_route "den-di"
+        
         public static bool comparenum(object s1, object s2)
         {
             if (((DTO_QLVX)s1).number_ticket> ((DTO_QLVX)s2).number_ticket)

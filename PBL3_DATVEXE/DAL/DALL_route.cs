@@ -60,15 +60,15 @@ namespace PBL3_DATVEXE.DAL
         public void addroute_DAL(DTO_route r)
         {
             string query = "insert into Route values ('";
-            query += r.id_route + "', '" + r.departure + "', '" + r.arrival + "', '"
+            query += r.id_route + "', N'" + r.departure + "', N'" + r.arrival + "', '"
                 + false + "');";
             DB_H.Instance.Ex(query);
 
         }
         public void updateRoutebyid_route(DTO_route s)
         {
-            string querry = "update Route set id_route = '" + s.id_route + "', departure = '" + s.departure
-                + "', arrival = '" + s.arrival + "', deleted = '" + false
+            string querry = "update Route set id_route = '" + s.id_route + "', departure = N'" + s.departure
+                + "', arrival = N'" + s.arrival + "', deleted = '" + false
                 + "' where id_route = '" + s.id_route + "'";
             DB_H.Instance.Ex(querry);
         }

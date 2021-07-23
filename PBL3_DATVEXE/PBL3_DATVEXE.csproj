@@ -209,12 +209,6 @@
     <Compile Include="View\Add-detail.Designer.cs">
       <DependentUpon>Add-detail.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\AffterLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,12 +250,6 @@
     </Compile>
     <Compile Include="View\historyBook.designer.cs">
       <DependentUpon>historyBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\infoTicket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\infoTicket.Designer.cs">
-      <DependentUpon>infoTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="View\main_ql.cs">
       <SubType>Form</SubType>
@@ -346,9 +334,6 @@
     <EmbeddedResource Include="View\Add-detail.resx">
       <DependentUpon>Add-detail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\AffterLogin.resx">
       <DependentUpon>AffterLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,9 +354,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\historyBook.resx">
       <DependentUpon>historyBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\infoTicket.resx">
-      <DependentUpon>infoTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\main_ql.resx">
       <DependentUpon>main_ql.cs</DependentUpon>

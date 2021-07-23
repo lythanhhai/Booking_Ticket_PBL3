@@ -28,7 +28,11 @@ namespace PBL3_DATVEXE.View
             this.date = date;
 
             showDetailRoute(this.departure, this.arrival, this.date);//"Quảng Trị","Đà Nẵng", DateTime.Now
-
+            //showDetailRoute("Hà Tĩnh", "Đà Nẵng", this.date);
+            if (flowLayoutPanel1 == null)
+            {
+                MessageBox.Show("Khong co tuyen di nao ban can tim");
+            }
             //List<DetailRoute> list = BLL_TKVX.Instance.getAllChiTietTuyen_BLL();
             //foreach (DetailRoute i in list)
             //{
