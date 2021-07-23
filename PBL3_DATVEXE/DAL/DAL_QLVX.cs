@@ -181,10 +181,10 @@ namespace PBL3_DATVEXE.DAL
             }
             return a;
         }
-        public List<DTO_QLVX> getallQLVX()
+        public List<DTO_QLVX1> getallQLVX()
         {
 
-            List<DTO_QLVX> data = new List<DTO_QLVX>();
+            List<DTO_QLVX1> data = new List<DTO_QLVX1>();
             string q = "select * from [Order]";
             foreach (DataRow i in DB_H.Instance.get(q).Rows)
             {
@@ -193,19 +193,19 @@ namespace PBL3_DATVEXE.DAL
             return data;
         }
 
-        public DTO_QLVX getQLVX(DataRow dr)
+        public DTO_QLVX1 getQLVX(DataRow dr)
         {
 
 
-            return new DTO_QLVX
+            return new DTO_QLVX1
             {
                 id_order = dr["id_order"].ToString(),
-                date_order = Convert.ToDateTime(dr["date_order"].ToString()),
+             //   date_order = Convert.ToDateTime(dr["date_order"].ToString()),
                 date_route = doi_date(dr["id_order"].ToString()),
                 name_person = doipersonvip(dr["id_person"].ToString(), 1),
                 phone = doipersonvip(dr["id_person"].ToString(), 2),
-                address = doipersonvip(dr["id_person"].ToString(), 3),
-                email = doipersonvip(dr["id_person"].ToString(), 4),
+             //   address = doipersonvip(dr["id_person"].ToString(), 3),
+             //   email = doipersonvip(dr["id_person"].ToString(), 4),
                 number_ticket = Convert.ToInt32(dr["numberTicket"].ToString()),
                 total_price = Convert.ToDouble(dr["total_price"].ToString()),
                 vehicle = doivehicle(dr["id_order"].ToString()),

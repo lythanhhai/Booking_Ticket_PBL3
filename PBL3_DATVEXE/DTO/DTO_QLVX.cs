@@ -9,17 +9,17 @@ namespace PBL3_DATVEXE.DTO
     class DTO_QLVX
     {
         public string id_order { get; set; }
-        public DateTime date_order { get; set; }
-        public string date_route { get; set; }
+      //  public DateTime date_order { get; set; }
+     //   public string date_route { get; set; }
         public string name_person { get; set; }
         public string phone { get; set; }
-        public string address { get; set; }
-        public string email { get; set; }
+       // public string address { get; set; }
+    //    public string email { get; set; }
         public int number_ticket { get; set; }
         public double total_price { get; set; }
-        public string vehicle { get; set; }// name_vehicle
+       // public string vehicle { get; set; }// name_vehicle
         public string order_seat { get; set; }// name_seat// liet ke tat ca neu dat nhieu hon 1 ve
-        public string route { get; set; }// name_route "den-di"
+      //  public string route { get; set; }// name_route "den-di"
         
         public static bool comparenum(object s1, object s2)
         {

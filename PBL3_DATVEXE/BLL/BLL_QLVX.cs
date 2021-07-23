@@ -27,10 +27,10 @@ namespace PBL3_DATVEXE.BLL
 
             }
         }
-        List<DTO_QLVX> dataa = DAL_QLVX.Instance.getallQLVX();
+        List<DTO_QLVX1> dataa = DAL_QLVX.Instance.getallQLVX();
 
 
-        public List<DTO_QLVX> getallQLVX()
+        public List<DTO_QLVX1> getallQLVX()
         {
             return DAL_QLVX.Instance.getallQLVX();
 
@@ -67,24 +67,24 @@ namespace PBL3_DATVEXE.BLL
         public List<DTO_QLVX> getQLVXBY1(string route, string vehicle, string date_route,string name_person )
         {
             List<DTO_QLVX> data = new List<DTO_QLVX>();
-            foreach (DTO_QLVX i in dataa)
+            foreach (DTO_QLVX1 i in dataa)
             {
                 if (i.route.Contains(route) && i.vehicle.Contains(vehicle) && i.date_route.Contains(date_route)&& (i.name_person.Contains(name_person)||i.phone.Contains(name_person)))
                 {
                     data.Add(new DTO_QLVX
                     {
                         id_order = i.id_order,
-                        date_order = i.date_order,
-                        date_route = i.date_route,
+                     //   date_order = i.date_order,
+                      //  date_route = i.date_route,
                         name_person = i.name_person,
                         phone = i.phone,
-                        address = i.address,
-                        email = i.email,
+                      //  address = i.address,
+                      //  email = i.email,
                         number_ticket = i.number_ticket,
                         total_price = i.total_price,
-                        vehicle = i.vehicle,
+                       // vehicle = i.vehicle,
                         order_seat = i.order_seat,
-                        route = i.route
+                       // route = i.route
 
                     });
 

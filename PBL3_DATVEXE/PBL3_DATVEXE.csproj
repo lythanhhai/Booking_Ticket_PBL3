@@ -183,6 +183,7 @@
     <Compile Include="DTO\DTO_DelRoute.cs" />
     <Compile Include="DTO\DTO_delRoute_xl.cs" />
     <Compile Include="DTO\DTO_QLVX.cs" />
+    <Compile Include="DTO\DTO_QLVX1.cs" />
     <Compile Include="DTO\DTO_route.cs" />
     <Compile Include="DTO\DTO_vehicle.cs" />
     <Compile Include="DTO\historyBook.cs" />

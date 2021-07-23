@@ -83,7 +83,7 @@ namespace PBL3_DATVEXE.View
         }
         public void load()
         {
-            bunifuDataGridView1.DataSource = BLL_QLVX.Instance.getallQLVX();
+            bunifuDataGridView1.DataSource = BLL_QLVX.Instance.getQLVXBY1("","","","");
         }
         public void Show1(string route, string vehicle, string date_route)
         {
